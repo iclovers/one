@@ -1,0 +1,238 @@
+body {
+  font-size: 0.24rem !important;
+  margin: 0 auto;
+}
+p,
+h1,
+h4,
+h5 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+h6,
+h2,
+p {
+  margin-top: 0 !important;
+}
+.lj_hb > .lj_hbwrap {
+  position: relative;
+  padding: 0.6rem 0.2rem;
+  background-color: #f3f4f5;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd {
+  background: url(../images/lj_hb4.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 6rem;
+  height: 7.9rem;
+  border-radius: 0.16rem;
+  position: relative;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -10px;
+  background: url(../images/lj_hb1.png) no-repeat;
+  width: 1rem;
+  height: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon {
+  text-align: center;
+  padding: 0.3rem 0.1rem 1rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_count {
+  padding: 0.2rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_count > span {
+  background: url(../images/lj_hb2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 4.2rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  padding-right: 0.9rem;
+  position: relative;
+  border-radius: 0.1rem;
+  margin: 0.2rem 0;
+  margin-left: 0.6rem;
+  color: #fff;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_count > span > b {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-right: 0.1rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > p {
+  color: #999;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_get {
+  background: url(../images/lj_hb7.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 6.16rem;
+  transform: translate(-50%);
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > #my-modal .lj_deng h4 {
+  font-size: 0.36rem;
+  font-weight: 700;
+  line-height: 1rem;
+  border-bottom: 0.02rem solid #f3f4f5;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > #my-modal .lj_main {
+  padding: 0.3rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > #my-modal .lj_main > .mobile {
+  background: #f1f5f9;
+  border-radius: 0.1rem;
+  padding: 0.16rem;
+  width: 4.8rem;
+  line-height: 15px !important;
+  margin-bottom: 0.2rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > #my-modal .lj_main > .lj_yan > .code {
+  background-color: #f1f5f9;
+  border-radius: 0.1rem;
+  width: 2.4rem;
+  line-height: 15px !important;
+  margin-right: 0.2rem;
+  padding: 0.16rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > #my-modal .lj_main > .lj_yan > .lj_huo {
+  border-radius: 0.1rem;
+  width: 2rem;
+  border: 0.02rem solid #0b8bff;
+  background-color: #fff;
+  color: #0b8bff;
+  padding: 0.16rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > #my-modal .lj_main > .lj_yan > p {
+  padding-top: 0.2rem;
+  color: #f85757;
+  font-size: 0.24rem;
+  text-align: center;
+  display: none;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > #my-modal .lj_main > .lj_yan > .lj_gift {
+  background-color: #0b8bff;
+  border-radius: 0.1rem;
+  color: #fff;
+  padding: 0.16rem 0;
+  margin-top: 0.2rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_finish,
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_ling {
+  position: fixed;
+  top: 5.3rem;
+  left: 1.6rem;
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 0.32rem;
+  color: #fff;
+  z-index: 2000;
+  display: none;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_mes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1.6rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  padding: 0.1rem 0.2rem;
+  text-align: left;
+  display: none;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_mes > h5 {
+  font-size: 0.28rem;
+  font-weight: 700;
+  margin-left: 0.1rem;
+  color: #ded5d5;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_mes > h5 > i {
+  color: #f1f5f9;
+  margin-right: 0.16rem;
+  font-size: 0.32rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbHd > .lj_hdCon > .lj_mes > p {
+  font-size: 0.24rem;
+  color: #f1f5f9;
+  padding-top: 0.06rem;
+}
+.lj_hb > .lj_hbwrap > .lj_tips {
+  text-align: center;
+  padding: 0.3rem 0;
+  font-size: 0.2rem;
+  color: #999;
+}
+.lj_hb > .lj_hbwrap > .lj_use {
+  height: 0.74rem;
+  background-color: #fff;
+  text-align: center;
+  line-height: 0.74rem;
+  font-size: 0.28rem;
+  margin-bottom: 0.3rem;
+}
+.lj_hb > .lj_hbwrap > .lj_info {
+  height: 1.7rem;
+  background-color: #eceef1;
+  padding: 0.3rem 0;
+  padding-left: 0.5rem;
+  color: #999;
+  position: relative;
+}
+.lj_hb > .lj_hbwrap > .lj_info > p::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 0.06rem;
+  height: 0.06rem;
+  border-radius: 50%;
+  background-color: #333;
+}
+.lj_hb > .lj_hbwrap > .lj_info > p:first-of-type::before {
+  top: 0.46rem;
+}
+.lj_hb > .lj_hbwrap > .lj_info > p:last-of-type::before {
+  top: 0.84rem;
+}
+.lj_hb > .lj_hbwrap > .lj_hbImg {
+  background: url(../images/lj_hb5.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1.5rem;
+  border-radius: 0.16rem;
+  margin-bottom: 0.3rem;
+}
+.lj_hb > .lj_hbwrap > footer {
+  height: 3rem;
+  padding: 0.3rem;
+  text-align: center;
+  background-color: #fff;
+}
+.lj_hb > .lj_hbwrap > footer > a {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../images/lj_hb6.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.lj_hb > .lj_hbwrap > footer > p {
+  color: #999;
+}
+#lj_box {
+  width: 5.5rem;
+}

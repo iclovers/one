@@ -1,0 +1,318 @@
+@baseColor: #0b8bff;
+.alert_page {
+    display: none;
+    position: fixed;
+    font-size: 16/50rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 9999;
+    .hint {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 3.7rem;
+        height: 1rem;
+        left: 50%;
+        top: 3.6rem;
+        transform: translateX(-50%);
+        border-radius: 0.1rem;
+        text-align: center;
+        line-height: 1rem;
+        i {
+            color: #f00;
+        }
+    }
+    .jigsaw_box {
+        display: none;
+        position: absolute;
+        width: 6.4rem;
+        height: 3.6rem;
+        top: 143/50rem;
+        background-color: #fff;
+        div#msg {
+            display: none;
+            text-align: center;
+            line-height: 56/50rem;
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #000;
+            font-size: 22/50rem;
+            font-weight: 700;
+        }
+    }
+}
+.lesson_layout {
+    width: 100%;
+    height: 100%;
+    font-size: 14/50rem;
+    .login_bg {
+        position: absolute;
+        width: 6.4rem;
+        height: 120/50rem;
+        background: url('./../images/zyp-login-bg.png') no-repeat left top;
+        background-size: cover;
+        .am-icon-btn {
+            background-color: transparent;
+            position: absolute;
+            width: 38/50rem;
+            height: 38/50rem;
+            line-height: 32/50rem;
+            font-size: 26/50rem;
+            top: 0;
+            left: 0;
+            color: rgba(11, 139, 255, .8);
+        }
+        .logo {
+            position: absolute;
+            width: 60/50rem;
+            height: 60/50rem;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            a {
+                display: block;
+                width: 60/50rem;
+                height: 60/50rem; 
+                font-size: 0;
+                background: url('./../images/lj_app.png') no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+    .login_page {
+        height: 100%;
+        padding-top: 130/50rem;
+        overflow: hidden;
+        .am-tabs {
+            .am-tabs-nav {
+                border: none;
+                li {
+                    margin: 0;
+                    a {
+                        width: 160/50rem;
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        text-align: center;
+                        line-height: 40/50rem;
+                        position: relative;
+                        color: #ccc;
+                    }
+                    &.am-active {
+                        a {
+                            color: @baseColor;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 120/50rem;
+                                height: 3/50rem;
+                                border-radius: 1.5/50rem;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background-color: @baseColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .am-tabs-bd {
+            border: none;
+            padding-top: 10/50rem;
+            .am-tab-panel {
+                padding: 10/50rem 20/50rem 0;
+                .ipt_phone_num {
+                    border-bottom: 1/50rem solid #ccc;
+                    height: 1rem;
+                    position: relative;
+                    .phone_num {
+                        width: 100%;
+                        border: none;
+                        font-size: 10/50rem;
+                        padding: 23/50rem 0 10/50rem;
+                        font-weight: 700;
+                    }
+                    .clear_icon {
+                        display: none;
+                        position: absolute;
+                        z-index: 11;
+                        right: 10/50rem;
+                        top: 20/50rem;
+                        color: #999;
+                    }
+                }
+                .ipt_password {
+                    border-bottom: 1/50rem solid #ccc;
+                    height: 1rem;
+                    position: relative;
+                    .psw {
+                        width: 100%;
+                        border: none;
+                        font-size: 10/50rem;
+                        padding: 23/50rem 0 10/50rem;
+                        font-weight: 700;
+                    }
+                    .clear_icon {
+                        display: none;
+                        position: absolute;
+                        z-index: 11;
+                        right: 10/50rem;
+                        top: 20/50rem;
+                        color: #999;
+                    }
+                }
+                .ipt_validcode {
+                    border-bottom: 1/50rem solid #ccc;
+                    height: 1rem;
+                    position: relative;
+                    .validcode {
+                        width: 170/50rem;
+                        border: none;
+                        font-size: 10/50rem;
+                        padding: 23/50rem 0 10/50rem;
+                        font-weight: 700;
+                        
+                    }
+                    .clear_icon {
+                        display: none;
+                        position: absolute;
+                        z-index: 11;
+                        left: 3rem;
+                        top: 20/50rem;
+                        color: #999;
+                    }
+                    .obtain_validcode {
+                        width: 105/50rem;
+                        border: none;
+                        font-size: 10/50rem;
+                        padding: 23/50rem 0 10/50rem;
+                        background-color: transparent;
+                        color: #0b8bff;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 1/50rem;
+                        height: 20/50rem;
+                        left: 173/50rem;
+                        bottom: 8/50rem;
+                        background-color: #ccc;
+                    }
+                }
+                .agreement_items {
+                    height: 1rem;
+                    line-height: 1rem;
+                    position: relative;
+                    padding-left: 20/50rem;
+                    .check_box {
+                        position: absolute;
+                        height: 31/50rem;
+                        width: 21/50rem;
+                        padding: 10/50rem 10/50rem 10/50rem 0;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-47%);
+                        i {
+                            display: block;
+                            height: 11/50rem;
+                            width: 11/50rem;
+                            border: 1/50rem solid #333;
+                        }
+                        &.isChecked {
+                            i {
+                                background: url('./../images/zyp-checked.png');
+                                background-size: contain;
+                            }
+                        }
+                    }
+                    a {
+                        font-size: 10/50rem;
+                        color: #333;
+                        text-decoration: underline;
+                    }
+                }
+                .submit_form {
+                    width: 100%;
+                    height: 40/50rem;
+                    background: #aed5ff;
+                    color: #fff;
+                    border: none;
+                    border-radius: 2/50rem;
+                }
+                .other_method {
+                    padding-top: 30/50rem;
+                    .other_md_hd {
+                        position: relative;
+                        height: 30/50rem;
+                        text-align: center;
+                        font-size: 10/50rem;
+                        line-height: 30/50rem;
+                        span {
+                            position: absolute;
+                            height: 30/50rem;
+                            background-color: #fff;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: 1;
+                            padding: 0 10/50rem;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 230/50rem;
+                            height: 0;
+                            border-bottom: 1/50rem solid #ccc;
+                            left: 50%;
+                            top: 50%;
+                            transform: translateX(-50%);
+
+                        }
+                    }
+                    .other_icon {
+                        position: relative;
+                        height: 35/50rem;
+                        margin-top: 20/50rem;
+                        
+                        a {
+                            display: block;
+                            position: absolute;
+                            width: 35/50rem;
+                            height: 35/50rem;
+                            border-radius: 50%;
+                            top: 0;
+                            background-color: #f00;
+                            
+                            &:first-of-type {
+                                background: url('./../images/zyp-weibo.png');
+                                background-size: 35/50rem 35/50rem;
+                                margin-left: -1rem;
+                                left: 50%;
+                            }
+                            &:last-of-type {
+                                background: url('./../images/zyp-qq.png');
+                                background-size: 35/50rem 35/50rem;
+                                margin-right: -1rem;
+                                right: 50%;
+                            }
+                        }
+                    }
+                }
+                .forget_pwd {
+                    height: 30/50rem;
+                    line-height: 30/50rem;
+                    font-size: 10/50rem;
+                    a {
+                        display: inline-block;
+                        height: 30/50rem;
+                        color: #aaa;
+                    }
+                }
+            }
+            
+        }
+    }
+}

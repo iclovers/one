@@ -1,0 +1,503 @@
+/* 全页背景色 */
+body {
+  background-color: #F3F4F5;
+}
+/* 页头 */
+.lesson_layout {
+  width: 0;
+  overflow: hidden;
+  /* 标题 */
+  /* tab栏 */
+  /* content部分 */
+  /* 推荐块 */
+  /* 目录 */
+  /* 留言 */
+  /* 底部固定 */
+  /* 回到顶部 */
+}
+.lesson_layout .header {
+  position: relative;
+  height: 3.6rem;
+  background-image: url(../images/zyl_title.jpg);
+  background-size: 100% auto;
+}
+.lesson_layout .header > span,
+.lesson_layout .header > a {
+  position: absolute;
+  top: 0.1rem;
+  width: 0.512rem;
+  height: 0.512rem;
+  line-height: 0.512rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 0.32rem;
+  z-index: 999;
+}
+.lesson_layout .header > a {
+  left: 0.25rem;
+}
+.lesson_layout .header > span {
+  right: 0.25rem;
+}
+.lesson_layout .header > span .share {
+  display: none;
+  position: absolute;
+  top: 0.5rem;
+  right: -0.23rem;
+  width: 6.4rem;
+  padding: 0.128rem;
+  text-align: center;
+  font-size: 0.48rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.lesson_layout .header > span .share > a {
+  display: inline-block;
+  width: 1.1rem;
+}
+.lesson_layout .header > span .share a:nth-of-type(2) {
+  color: #ff5b5b;
+}
+.lesson_layout .header > span .share a:nth-of-type(3) {
+  color: #7BC549;
+}
+.lesson_layout .header > span .share a:nth-of-type(4) {
+  color: #56B6E7;
+}
+.lesson_layout .header > span .share a:nth-of-type(5) {
+  color: #FDBE3D;
+}
+.lesson_layout .title {
+  padding: 0.256rem;
+  font-size: 0.32rem;
+  line-height: 0.75rem;
+  background-color: #fff;
+}
+.lesson_layout .title > h3 {
+  font-weight: 700;
+  font-size: 0.36rem;
+}
+.lesson_layout .title > .money {
+  font-size: 0.3rem;
+  color: #ff5b5b;
+}
+.lesson_layout .title > .other-infos {
+  font-size: 0.24rem;
+}
+.lesson_layout .title > .other-infos > i {
+  color: #118BD0;
+}
+.lesson_layout .title > .other-infos > span {
+  color: #aaa;
+  padding-left: 0.15rem;
+}
+.lesson_layout .link > a {
+  display: block;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  padding-left: 0.256rem;
+  padding-right: 0.256rem;
+  font-size: 0.26rem;
+  color: #118BD0;
+  background-color: #F1F8FF;
+}
+.lesson_layout .tab {
+  margin-top: 0.18rem;
+  font-size: 0.32rem;
+  background-color: #fff;
+  z-index: 999;
+  /* 去除默认padding */
+}
+.lesson_layout .tab .am-nav-tabs {
+  border: none;
+}
+.lesson_layout .tab .am-nav-tabs > li.am-active > a,
+.lesson_layout .tab a:visited,
+.lesson_layout .tab a:hover,
+.lesson_layout .tab a:focus,
+.lesson_layout .tab a:active {
+  color: #333;
+}
+.lesson_layout .tab .am-nav-tabs > li > a {
+  border: none;
+}
+.lesson_layout .tab .am-nav > li > a:focus,
+.lesson_layout .tab .am-nav > li > a:hover {
+  background-color: #fff;
+}
+.lesson_layout .tab .am-nav-tabs > li {
+  margin-bottom: 0;
+}
+.lesson_layout .tab .am-nav-tabs > li.am-active > a:focus,
+.lesson_layout .tab .am-nav-tabs > li.am-active > a:hover {
+  color: #333;
+}
+.lesson_layout .tab .am-active {
+  border-bottom: 3px solid #118BD0;
+}
+.lesson_layout .tab .am-u-sm-4 {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.lesson_layout .am-panel {
+  border: none;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+.lesson_layout .am-nav > li.am-active > a,
+.lesson_layout .am-nav > li.am-active > a:focus,
+.lesson_layout .am-nav > li.am-active > a:hover {
+  color: #333;
+  background-color: #fff;
+}
+.lesson_layout .am-nav > li + li {
+  margin-top: 0;
+}
+.lesson_layout .content {
+  padding: 0.256rem;
+  background-color: #fff;
+  font-size: 0.28rem;
+}
+.lesson_layout .content > h1 {
+  position: relative;
+  padding: 0.34rem;
+  font-size: 0.34rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+.lesson_layout .content > h1::before,
+.lesson_layout .content > h1::after {
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  content: "";
+  width: 0.07rem;
+  height: 0.07rem;
+  background-color: #333;
+}
+.lesson_layout .content > h1::before {
+  left: 2rem;
+}
+.lesson_layout .content > h1::after {
+  right: 2rem;
+}
+.lesson_layout .content > img {
+  display: block;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+.lesson_layout .content > .questions {
+  margin-top: 0.2rem;
+  margin-bottom: 1.6rem;
+  line-height: 0.5rem;
+}
+.lesson_layout .content > .questions > h4 {
+  color: red;
+  border-left: 3px solid red;
+  font-weight: 700;
+  padding-left: 0.1rem;
+  margin-left: 0.1rem;
+}
+.lesson_layout .content > .questions > p {
+  padding-left: 0.32rem;
+  padding-right: 0.32rem;
+}
+.lesson_layout .content > .questions > .que {
+  font-weight: 700;
+}
+.lesson_layout .content > span {
+  display: block;
+  text-align: center;
+}
+.lesson_layout .content > p {
+  text-align: center;
+  line-height: 0.4rem;
+  margin-bottom: 1rem;
+}
+.lesson_layout .content > .teacher {
+  display: flex;
+  padding-left: 0.256rem;
+  padding-right: 0.256rem;
+  font-size: 0.28rem;
+}
+.lesson_layout .content > .teacher .teacher-img {
+  width: 1.62rem;
+  height: 1.62rem;
+  padding-top: 0.06rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-image: url(../images/zyl_teacher.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.lesson_layout .content > .teacher .teacher-detail {
+  flex: 1;
+}
+.lesson_layout .content > .teacher .teacher-detail > h4 {
+  font-size: 16px;
+  padding-bottom: 0.1rem;
+  font-weight: 700;
+}
+.lesson_layout .recommend > a {
+  display: flex;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  height: 1.532rem;
+  padding: 0.256rem;
+  background-color: #fff;
+}
+.lesson_layout .recommend > a > span {
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+  width: 0.58rem;
+  height: 0.58rem;
+  background-image: url(../images/zyl_icon1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lesson_layout .recommend > a > .explore {
+  font-size: 0.34rem;
+}
+.lesson_layout .recommend > a > .explore strong {
+  font-weight: 700;
+}
+.lesson_layout .recommend > a > .explore p {
+  font-size: 0.24rem;
+  color: #bbb;
+}
+.lesson_layout .recommend > a > .class-cover {
+  flex: 1;
+  width: 1.6rem;
+  height: 1.02rem;
+  margin-left: 1rem;
+  position: relative;
+}
+.lesson_layout .recommend > a > .class-cover > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lesson_layout .recommend > a > .class-cover > img:nth-of-type(1) {
+  left: -40px;
+  width: 1.33rem;
+  height: 0.75rem;
+}
+.lesson_layout .recommend > a > .class-cover > img:nth-of-type(2) {
+  left: -20px;
+  width: 1.64rem;
+  height: 0.9rem;
+}
+.lesson_layout .recommend > a > .class-cover > img:nth-of-type(3) {
+  left: 5px;
+  width: 1.83rem;
+  height: 1rem;
+}
+.lesson_layout .catalogue {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.lesson_layout .catalogue .listen-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.38rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(-134deg, #47b2ff, #0b8bff 100%, #0b8bff 0);
+  font-size: 0.24rem;
+}
+.lesson_layout .catalogue .audio-list,
+.lesson_layout .catalogue .audio-active {
+  padding-top: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+.lesson_layout .catalogue .audio-list > a,
+.lesson_layout .catalogue .audio-active > a {
+  position: relative;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  display: block;
+  height: 1.4rem;
+  font-size: 0.24rem;
+}
+.lesson_layout .catalogue .audio-list > a .play-logo,
+.lesson_layout .catalogue .audio-active > a .play-logo {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.3rem;
+  color: #118BD0;
+}
+.lesson_layout .catalogue .audio-list > a .play-logo > span,
+.lesson_layout .catalogue .audio-active > a .play-logo > span {
+  font-size: 0.3rem;
+}
+.lesson_layout .catalogue .audio-list > a > p,
+.lesson_layout .catalogue .audio-active > a > p {
+  padding-left: 1rem;
+  font-size: 0.3rem;
+}
+.lesson_layout .catalogue .audio-list:nth-last-of-type(-n+5) .play-logo {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.5rem;
+  color: #ccc;
+}
+.lesson_layout .catalogue .audio-list:nth-last-of-type(-n+5) .play-logo > span {
+  font-size: 0.5rem;
+}
+.lesson_layout .catalogue .chapter-list .audio-list:nth-last-of-type(-n+4) {
+  display: none;
+}
+.lesson_layout .catalogue .cata-title {
+  font-size: 0.26rem;
+  line-height: 0.75rem;
+  color: #666;
+  background-color: #F3F4F5;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-left: 0.5rem;
+}
+.lesson_layout .catalogue .chapter-title {
+  position: relative;
+  font-size: 0.34rem;
+  color: #118BD0;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+}
+.lesson_layout .catalogue .chapter-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.08rem;
+  height: 0.2rem;
+  background-color: #118BD0;
+}
+.lesson_layout .catalogue .unfold {
+  height: 1.058rem;
+  line-height: 1.058rem;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #118BD0;
+}
+.lesson_layout .catalogue .unfold > span:nth-of-type(2) {
+  display: none;
+}
+.lesson_layout .message {
+  font-size: 0.34rem;
+  padding: 0.2rem;
+  background-color: #fff;
+  margin-top: 0.2rem;
+  margin-bottom: 0.82rem;
+}
+.lesson_layout .message > h3 {
+  font-weight: 700;
+}
+.lesson_layout .message > .meg-bg {
+  position: relative;
+  color: #666;
+  font-size: 0.28rem;
+  width: 100%;
+  height: 4.44rem;
+  background-image: url(../images/zyl_phone.png);
+  background-size: 4rem 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lesson_layout .message > .meg-bg::before {
+  content: "暂无评价";
+  position: absolute;
+  bottom: 0.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lesson_layout .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 0.82rem;
+  border-top: 2px solid #F3F4F5;
+  font-size: 0.32rem;
+  line-height: 0.82rem;
+  text-align: center;
+  background-color: #fff;
+}
+.lesson_layout .footer .left {
+  flex: 1;
+  color: #333;
+}
+.lesson_layout .footer .right {
+  flex: 1;
+  color: #fff;
+  background-color: #118BD0;
+}
+.lesson_layout .top {
+  display: none;
+  width: 0.58rem;
+  height: 0.58rem;
+  background-color: rgba(11, 139, 255, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 0.2rem;
+  text-align: center;
+  font-size: 0.36rem;
+  color: #fff;
+}
+.lesson_layout .am-btn-success {
+  border: none;
+}
+.lesson_layout .am-btn {
+  padding: 0;
+  line-height: 0.5rem;
+}
+.lesson_layout .am-btn-success:focus,
+.lesson_layout .am-btn-success:hover {
+  background-color: rgba(11, 139, 255, 0.5);
+}
+/* 跳转登录界面 */
+.login {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 0.32rem;
+  color: #fff;
+  z-index: 9999;
+}
+.load_animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+.load_animation .load_icon {
+  position: absolute;
+  width: 1.54rem;
+  height: 1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/zyp-load-pic.png') no-repeat left 0.02rem;
+  background-size: 1.54rem 25.68rem;
+}

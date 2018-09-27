@@ -1,0 +1,897 @@
+body {
+    max-width: 6.4rem;
+    padding: 0;
+    margin: 0;
+}
+@color:#0b8bff;
+body{
+    font-size: 12/50rem !important;
+    
+}
+p,h2,h4{
+    margin-bottom: 0 !important;
+}
+h6,h2,p{
+    margin-top: 0 !important;
+}
+ul{
+    padding-left: 0 !important;
+}
+
+/* 全屏加载页面 */
+.lesson_layout {
+    width: 0;
+    overflow: hidden;
+}
+.load_animation {
+    width: 100%;
+    height: 100%;  
+    top: 0;
+    left: 0; 
+    background-color: #fff;
+    .load_icon {
+        position: absolute;
+        width: 77/50rem;
+        height: 50/50rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: url('./../images/zyp-load-pic.png') no-repeat left 1/50rem;
+        background-size: 77/50rem 1284/50rem;
+    } 
+}
+
+// 头部块
+.active{
+    position: relative;
+    height: 176/50rem;
+    top: 0;
+    left:0;
+}
+.current{
+    height: 0;
+}
+// 关注样式
+.focusIco{
+    content: "\f004";
+    color: #ec2710;
+}
+.lj_indexhd{
+    >.lj_header {
+        width: 6.4rem;
+        height: 85/50rem;
+        background-image: url(../images/lj_header.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        >.lj_headerContent{
+            .lj_userContent{
+                padding: 0.5rem 0.4rem;
+                height: 85/50rem;
+                font-size: 0.3rem;
+                >.lj_userhead{
+                    width: 0.68rem;
+                    height: 0.68rem;
+                    position: absolute;
+                    top: 0.5rem;
+                    left: 0.8rem;
+                   >.lj_img{
+                       content: "";
+                       width: 0.12rem;
+                       height: 0.12rem;
+                       border-radius: 50%;
+                       background-color:#ff5b5b;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        img{
+                            width: 0.68rem;
+                            height: 0.68rem;
+                            display: block;
+                        }
+                   }
+                  //下拉图标
+                   >.lj_xia{
+                        position: absolute;
+                        top: 5/50rem;
+                        left: 42/50rem;
+                        font-size: 15/50rem;
+                        color: #fff;
+                   }
+                }
+                >.lj_userApp{
+                    display: inline-block;
+                    width: 2.04rem;
+                    
+                    >.lj_app{
+                        position: absolute;
+                        top: 0.5rem;
+                        left: 3.6rem;
+                        >img{
+                            width: 0.68rem;
+                            height: 0.68rem;
+                            display: block;
+                        }
+                    }
+                    >span{
+                        display: inline-block; 
+                        position: absolute;
+                        top: 0.66rem;
+                        right: 0.8rem;
+                        vertical-align: middle;
+                        color: #fff;
+                     }
+                }
+            }
+        }
+    }
+     // 显示隐藏的头部
+    >.lj_yheader{
+        position: relative;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 180/50rem;
+        z-index: 99;
+        overflow: hidden;
+        >.lj_yinHd{
+            background: #f7f9ff;
+            color: #333;
+            padding: 30/50rem 0;
+            a:hover,a:focus,a:active,a:visited{
+            color:#000 !important;
+        }
+            // 隐藏logo的样式
+            >.lj_yin{ 
+                height: 34/50rem;
+                >.lj_img{
+                    content: "";
+                    width: 0.12rem;
+                    height: 0.12rem;
+                    border-radius: 50%;
+                    background-color:#ff5b5b;
+                     position: absolute;
+                     left: 125/50rem;
+                     top: 15/50rem;
+                     img{
+                         width: 0.68rem;
+                         height: 0.68rem;
+                         display: block;
+                     }
+                    //  下拉图标
+                    >.lj_xia{
+                     position: absolute;
+                     top: 8/50rem;
+                     left: 40/50rem;
+                     font-size: 15/50rem;
+                     color: #000;
+                    }
+                }
+            }
+            >.lj_userPerson{
+                text-align: center;
+                >a{
+                    text-align: center;
+                    font-size: 15/50rem;
+                    padding: 0 24/50rem;
+                    >.lj_uIco{
+                        margin-right: 7/50rem;
+                        color: #0b86f5;
+                    }
+                }
+                >a:first-of-type{
+                    border-right: 1/50rem solid #ccc;
+                }
+                a:hover,a:focus,a:active,a:visited{
+                    color:#000 !important;
+                }
+            }
+            >.lj_linkList{
+                overflow: hidden;
+                padding: 5/50rem 0;
+                margin: 0 15/50rem;
+                >a{
+                   height: 48/50rem; 
+                   text-align: center;
+                   padding: 10/50rem;
+                    float: left;
+                   >.lj_link{
+                    width: 26/50rem;
+                    height: 26/50rem; 
+                    margin: 0 auto;
+                    background-size: cover;
+                    background-position: center;
+                   }
+                }
+            }
+        }   
+    }
+    // 搜索框
+    >a.lj_searchContent{
+        position: relative;
+        bottom: 3/50rem;
+        left: 0;
+        width: 320/50rem;
+        height: 80/50rem;
+        padding: 15/50rem 25/50rem;
+        display: block;
+        background-image: url(../images/lj_header.png);
+        background-size: cover;
+        background-position: bottom center;
+     >input{
+         height: 0.8rem;
+         line-height: 0.8rem;
+         width: 5.4rem;
+         border-radius: 0.2rem;
+         background: hsla(0,0%,100%,.2);
+         color: #d0e4ff !important;
+         border: none;
+         padding: 0 0.2rem; 
+         font-size: 0.26rem;
+     }
+     >i::before {
+         content: "\f002";
+         position: absolute ;
+         right: 45/50rem;
+         top: 25/50rem;
+         font-size: 17/50rem;
+         color: #fff ;
+         font-weight: 400;
+     }
+    }
+}
+//section(内容块)
+.lj_mainContent {
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: .26667rem;
+    border-top-right-radius: .26667rem;
+    padding: 0.34rem 0.26rem;
+    margin-top: -0.32rem;
+    >.lj_toolbar{
+        margin-bottom: 0.32rem;
+        position: relative;
+        padding: 0 10/50rem 0 15/50rem;
+        overflow: hidden;
+        >a{
+            float: left;
+            margin-right: 20/50rem;
+            overflow: hidden;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            >img {
+                width:0.6rem;
+                height:0.6rem;
+            }
+            >p{
+                font-size: 0.24rem !important;
+                margin-top: 0.05rem;  
+            }
+        }
+        a:hover,a:focus,a:active,a:visited{
+            color:#000 !important;
+        }
+    }
+    >.lj_stratety {
+        position: relative;
+        margin-bottom: 0.32rem;
+        overflow: hidden;
+        >a{
+            float: left;
+            margin-right: 0.4rem;
+            width:84/50rem;
+            height: 122/50rem;
+            overflow: hidden;
+            >.lj_navImg{
+                width: 84/50rem;
+                height: 122/50rem;
+                border-radius: 0.2rem;
+                background-size: cover;
+                background-position: center;
+            }
+            >h6{
+                position: absolute;
+                top: 0.4rem;
+                // left: 0;
+                margin-left: 0.24rem;
+                padding: 3/50rem 6/50rem;
+                background-color: hsla(0,0%,100%,.9);
+                color: #0b8bff;
+                border-radius: 5/50rem;
+                font-size: 0.24rem;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: -3/50rem;
+                    border-bottom: 0.15rem solid hsla(0,0%,100%,.9);
+                    border-right: 0.15rem solid transparent;
+                }
+            }
+            >p{
+                position: absolute;
+                top: 1rem;
+                margin: 0 0.24rem;
+                width: 64/50rem;
+                font-size: 0.28rem !important;
+                color: #fff;
+            }
+        }
+        >a:last-of-type{
+            margin-right: 0;
+        }
+    }
+    >.lj_theme{
+        position: relative;
+        margin-bottom: 0.32rem;
+        overflow: hidden;
+        >a.lj_thOne{
+            width: 294/50rem;
+            height: 145/50rem;
+            >.lj_img{
+                width: 294/50rem;
+                height: 145/50rem;
+                // background-image: url(../images/lj_theme4.jpg);
+                background-size: cover;
+                background-position: center;
+                border-top-left-radius: 0.1rem;
+                border-top-right-radius: 0.1rem;
+            }
+            >h2,
+            >p,
+            >span{
+                position: absolute;
+                left: 0;
+                color: #fff;
+                text-align: center;
+            }
+            >h2{
+                top: 20/50rem;
+                font-weight: 700;
+                width:  294/50rem;
+                font-size: 18/50rem;
+            }
+            >p {
+               top: 1.1rem !important;
+               font-size: 13/50rem;
+               width:  294/50rem;
+            }
+            >span{
+                top: 1.6rem;
+                padding: 0.08rem 0.2rem;
+                font-size: 15/50rem;
+                background-color: #fff; 
+                color: @color;
+                left: 50%;
+                transform: translate(-50%);
+                margin-top: 0.2rem;
+                border-radius: 5/50rem;
+                transition: all 1s;
+                >i{
+                    margin-right: 5/50rem;   
+                }
+            }
+            >span:active i::before,
+            span:focus i::before{
+                content: "\f004";
+                transform: scale(1.5);
+                color: #ec2710;  
+            }
+        }
+        >a.lj_thTwo{
+            overflow: hidden;
+            >.lj_thLeft {
+                margin: 14/50rem 0 0 14/50rem;
+                float: left;
+                width: 200/50rem;
+                >h2{
+                    color: #333;
+                    font-size: 18/50rem;
+                    line-height: 1.4;
+                    height: 48/50rem;
+                    width: 190/50rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-weight: 700;
+                }
+                >p{
+                    color: #999;
+                    font-size: 14/50rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: 2;
+                }
+            }
+            >.lj_thRight{
+                width: 58/50rem;
+                height: 58/50rem;
+                float: right;
+                margin: 19/50rem 19/50rem 0 0;
+                >img{
+                    width: 65/50rem;
+                    height: 65/50rem;
+                    display: block;
+                }
+            }
+        }
+    }
+    >.lj_fmList {
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+       >.lj_box{
+           margin-bottom: 10/50rem;
+           overflow: hidden;
+           >a {
+            .lj_fmLeft {
+                float: left;
+                overflow: hidden;
+                width: 94/50rem;
+                height:94/50rem;
+                background-size: contain;
+                background-position: center;
+                border-top-left-radius: 5/50rem;
+                border-bottom-left-radius: 5/50rem;
+                position: relative;
+                top: 0;
+                left: 0;
+                >span{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 55/50rem;
+                    height: 18/50rem;
+                    background-color: #0b86f5;
+                    border-top-left-radius: 5/50rem;
+                    border-bottom-right-radius: 5/50rem;
+                    font-size: 12/50rem;
+                    color: #fff;
+                    text-align: center;
+                }
+                >img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 34/50rem;
+                    height: 34/50rem;
+                    
+                }
+            }
+            &:first-of-type .lj_fmLeft1{
+                 background-image: url(../images/lj_xin1.jpg);
+            }
+            &:last-of-type .lj_fmLeft2{
+                background-image: url(../images/lj_xin2.jpg);
+           }
+            .lj_fmRight {
+                float: left;
+                padding: 0 8/50rem;
+                width: 200/50rem;
+                height: 94/50rem;
+                >h4{
+                    color: #333;
+                    font-weight: 700;
+                    overflow: hidden;
+                    font-size: 14/50rem;
+                    line-height: 1.4;
+                    margin-bottom: 2/50rem !important;
+                }
+                >p {
+                    color: #999;
+                    line-height: 1.5;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            }
+       }  
+    }
+    >.lj_entrance {
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        >a{
+            width: 140/50rem;
+            height: 49/50rem;
+            background-size: contain;
+            background-position: center;
+            position: relative;
+            float: left;
+            margin-right: 13/50rem;
+            margin-top: 10/50rem;
+            &:first-of-type{
+                background-image: url(../images/lj_xin3.png);
+            }
+            &:last-of-type{
+                background-image: url(../images/lj_xin4.png);
+                margin-right: 0;
+            }
+            >span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 16/50rem;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//section(心情块)
+.lj_essenceContent {
+    position: relative;
+    background-color: #fff;
+    padding: 0.34rem 0;
+    margin-top: -0.32rem;
+    >.lj_essenceNav {
+        >.lj_eHeader {
+            border: transparent;
+            background-color: #f3f4f5;
+            padding: 0.3rem 0;
+            >li{
+                border: transparent;
+                margin-right: 7/50rem;
+                >a{
+                    border: transparent;
+                    color: #333 !important;
+                    box-sizing: border-box;
+                    padding: 3/50rem 6/50rem;
+                    background-color: #fff;
+                    border-radius: 10/50rem;
+                    &:active,
+                    &:focus,
+                    a{
+                        background-color: #0b8bff;
+                        color: #fff !important;
+                    }
+                }
+            }
+            >.am-active{
+                background-color: transparent;
+                color: #fff !important;
+                >a{
+                    background-color: #0b8bff; 
+                    color: #fff !important;
+                }
+            }
+            >li:first-of-type{
+               margin-left: 10/50rem;
+            }
+        }
+        >.lj_eBody {
+            border: none;
+            .lj_esBox {
+                padding: 0 !important;
+                >.content{
+                // 每一个li
+                 >.lj_esCon {
+                    border-bottom: 1/50rem solid #eee;
+                    padding: 10/50rem 10/50rem 15/50rem;
+                    >.lj_essence {
+                        overflow: hidden;
+                        >a{
+                            overflow: hidden;
+                            display: block;
+                            >.lj_esLeft {
+                                width: 198/50rem;
+                                height:86/50rem;
+                                float: left;
+                                >h2{
+                                    color: #333;
+                                    font-size: 17/50rem;
+                                    font-weight: 700;
+                                    line-height: 1.4;
+                                    height: 48/50rem;
+                                    white-space: normal;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: 5/50rem;
+                                    display: inline-block;
+                                }
+                                >.lj_h2 {
+                                    line-height: 1.4;
+                                    height: 30/50rem;
+                                }
+                                >p{
+                                    height: 40/50rem;
+                                    color: #999;
+                                    font-size: 13/50rem;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    line-height: 1.3;
+                                }
+                            }
+                            //test
+                            >.lj_testT {
+                                padding-top: 10/50rem;
+                            }
+                            >.lj_esRight{
+                                width: 78/50rem;
+                                height: 78/50rem;
+                                float: right;
+                                margin: 5/50rem; 
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .lj_peple {
+                            overflow: hidden;
+                            width: 300/50rem;
+                            height: 20/50rem;
+                            line-height: 20/50rem;
+                            font-size: 14/50rem;
+                            color: #999;
+                            margin-top: 5/50rem;
+                            display: block;
+                            >.lj_s1{
+                                float: left;
+                                color: #ff5099;
+                                font-size: 12/50rem;
+                            }
+                            >.lj_s2{
+                                float: right;
+                                padding-right: 10/50rem;
+                                font-size: 12/50rem;
+                            }
+                        }
+                    }
+                 }
+                }
+            }
+            .lj_asBox{
+                padding: 0 !important;
+                .lj_esAns{
+                    border-bottom: 1/50rem solid #eee;
+                    padding: 10/50rem 10/50rem 15/50rem;
+                    >.lj_answer{
+                        overflow: hidden;
+                        >a{
+                            overflow: hidden;
+                            display: block;
+                            height: 162/50rem;
+                            >.lj_asLeft{
+                                float: left;
+                                width: 26/50rem;
+                                height: 162/50rem;
+                                margin-right: 15/50rem;
+                               >.lj_asImg{
+                                height: 26/50rem;
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                border-radius: 50%;
+                               }
+                            }
+                            >.lj_asRight{
+                                >h2{
+                                    font-size: 17/50rem;
+                                    font-weight: 700;
+                                    line-height: 1.4;
+                                    height: 48/50rem;
+                                }
+                                >p{
+                                    height: 1.4rem;
+                                    color: #999;
+                                    font-size: 13/50rem;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    padding: 5/50rem 0;
+                                }
+                                >.lj_astips{
+                                    color: #999;
+                                   >.lj_as2{
+                                    float: right;
+                                    padding-right: 10/50rem;
+                                    font-size: 12/50rem;
+                                   } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .lj_fmBox{
+                padding: 0 !important;
+                .lj_hotFm{
+                    border-bottom: 1/50rem solid #f3f4f5;
+                    padding: 0 5/50rem;
+                    >.lj_fm{
+                        overflow: hidden;
+                        padding: 18/50rem 0;
+                        >a{
+                            overflow: hidden;
+                            padding-left: 10/50rem;
+                            display: block;
+                            >.lj_fmLeft{
+                                float: left;
+                                >h2{
+                                    font-size: 17/50rem;
+                                    font-weight: 700;
+                                    height: auto;
+                                    width: 198/50rem;
+                                }
+                                >p{
+                                    font-size: 13/50rem;
+                                    padding-top: 10/50rem;
+                                    color: #999;
+                                    span{
+                                        padding: 2/50rem 5/50rem;
+                                        font-size: 12/50rem;
+                                        border: 1/50rem solid #ccc;
+                                        border-radius: 5/50rem;
+                                       margin-left: 15/50rem;
+                                    }
+                                }
+                            }
+                            >.lj_fmRight{
+                                float: right;
+                                margin-right: 10/50rem;
+                                width: 60/50rem;
+                                height: 60/50rem;
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                position: relative;
+                                >img{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    width: 0.68rem;
+                                    height: 0.68rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+// 底部加载load
+.lj_esMore {
+    height: 30/50rem;
+    line-height: 30/50rem;
+    text-align: center;
+    font-size: 14/50rem;
+    color: #0b86f5;
+    display: block;
+}
+
+/* 底部 */
+.footer {
+    padding: 10/50rem 0; 
+    font-size: 0.24rem;
+    text-align: center;
+    a {
+        font-weight: 700;
+    }
+}
+//顶部块
+.lj_btnTop {
+    font-size: 1/50rem;
+    height: 32/50rem;
+    background-color: rgba(28, 28, 32, 0.8);
+    border: none;
+    display: none;
+    opacity: 1;
+    position: relative;
+    &:hover{
+        background-color: rgba(28, 28, 32, 0.9);
+        border-color: rgba(28, 28, 32, 0.9);
+        color: #fff;
+        border: none;
+    }
+    >.lj_headerList{
+        >.lj_topLogo{
+            background: url(../images/lj_topLogo.png) no-repeat;
+            width: 20/50rem;
+            height: 20/50rem;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+            position: absolute;
+            top: 6/50rem;
+            left: 15/50rem;
+        }
+        >#lj_toTop{
+            transition: none;
+            font-size: 14/50rem !important;
+            background-color: transparent;
+            border-color: #1c1c20;
+            border: none;
+            display: inline-block;
+            position: absolute;
+            top: 7/50rem;
+            left: 1rem;
+            padding: 0 !important;
+            color: #fff;
+            &:hover{
+                color: #fff;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        >.lj_person,
+        >.lj_mes,
+        >.lj_search{
+            font-size: 14/50rem;
+            position: absolute;
+            top: 7/50rem;
+            display: inline-block;
+            color: #fff;
+        }
+        >.lj_person{
+            left: 125/50rem;
+        }
+        >.lj_mes{
+            left: 200/50rem;
+        }
+        >.lj_search{
+            right: 20/50rem;
+            font-size: 18/50rem;
+            top: 4/50rem;
+        }
+    }
+}
+//侧边固定块
+.lj_fixbar {
+    position: fixed;
+    top: 400/50rem;
+    right: 4/50rem;
+    background: url(../images/lj_fixbar.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 46/50rem;
+    height: 46/50rem;
+    border-radius: 50%;
+    z-index: 100;
+    cursor: pointer;
+}
+.lj_fixtan{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6.4rem;
+    height: 568/50rem;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 101;
+    display: none;
+    >.lj_fixbox{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 296/50rem;
+        width: 220/50rem;
+        >.lj_fixImg{
+            display: inline-block;
+            height: 296/50rem;
+            width: 220/50rem;
+            background: url(../images/lj_fix.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        >span {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 30/50rem;
+            color: #fff;
+        }
+    }
+}

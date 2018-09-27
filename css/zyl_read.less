@@ -1,0 +1,376 @@
+@baseColor:#118BD0;
+.am-u-sm-1,.am-u-sm-2,.am-u-sm-3,.am-u-sm-4,.am-u-sm-5,.am-u-sm-6,.am-u-sm-7,.am-u-sm-8,.am-u-sm-9,.am-u-sm-10,.am-u-sm-11,.am-u-sm-12 {
+    padding-left: 0;
+    padding-right: 0;  
+}
+
+/*背景色*/
+body {
+    background-color: #F2F2F2;
+}
+
+/* 去除amazeui中input样式 */
+input {
+    box-shadow: none !important;
+} 
+
+/* 推荐下载 */
+.top {
+    height: 1rem;
+    line-height: 1rem;
+    background-color: #EDF1F5;
+    font-size: 0.24rem;
+    .am-g {
+        > div {
+            height: 1rem;
+            line-height: 1rem;   
+        }
+        > div:nth-of-type(-n+2) {
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-image: url(../images/zyl_x.png);
+            background-position: center;
+        }
+        > div:nth-of-type(2) {
+            width: 0.7rem;
+            background-size: 90%;
+            background-image: url(../images/zyl_logo.png);
+        }
+        > div:nth-of-type(3) {
+            width: 4rem;
+            font-size: 0.32rem;
+            color: #0F8EFF;
+            font-weight: 700;
+            > span {
+                font-size: 0.24rem;
+                color: #333;
+            }
+        }
+        > div:nth-of-type(4) {
+            float: left;
+            > button {
+                width: 1rem;
+                height: 0.5rem;
+                background-color: transparent;
+                border: 1px solid @baseColor;
+                border-radius: 0.1rem;
+                color: #2699db;              
+            }
+        }
+    }
+} 
+
+/* 全屏加载页面 */
+.lesson_layout {
+    width: 0;
+    overflow: hidden;
+}
+.load_animation {
+    width: 100%;
+    height: 100%;  
+    top: 0;
+    left: 0; 
+    background-color: #fff;
+    .load_icon {
+        position: absolute;
+        width: 77/50rem;
+        height: 50/50rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: url('./../images/zyp-load-pic.png') no-repeat left 1/50rem;
+        background-size: 77/50rem 1284/50rem;
+    } 
+}
+/* 顶部 */
+.article {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background-color: @baseColor;
+    text-align: center;
+    color: #fff;
+    font-size: 0.32rem;
+    > div,a {
+        color: #fff;
+        height: 0.9rem;
+        > img {
+            position: absolute;
+            right: 0.1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 0.64rem;
+            width: 0.64rem;
+            border-radius: 50%;
+        }
+    }
+    .am-icon-angle-left {
+        font-size: 0.45rem;
+    }
+}
+.am-btn {
+    padding: 0;
+    border: none;
+}
+
+/* 导航 */
+.nav {
+    height: 0.8rem;
+    background-color: #fff;
+    box-shadow: 0 2.5px 7.5px rgba(0,0,0,.1);
+    overflow: hidden;
+    color: #333;
+    li {
+        float: left;
+        line-height: 0.7rem;
+        text-align: center;
+        > a {
+            display: block;
+            padding-left: 0.2rem;
+            padding-right: 0.15rem;
+            margin-left: 0.15rem;
+            margin-right: 0.15rem;
+            font-size: 0.3rem;
+            &.active {
+                border-bottom: 2px solid @baseColor;
+            }
+        }
+    }
+    > div {
+        line-height: 0.7rem;
+        padding-left: 0.15rem;
+        padding-right: 0.15rem;
+        margin-left: 0.15rem;
+        margin-right: 0.15rem;
+        font-size: 0.3rem
+    }
+}
+
+/* 轮播图 */
+.swiper-container {
+    background-color: #666;
+    height: 4.26rem;
+    width: 6.4rem;
+    .swiper-wrapper {
+        > div {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        > div:nth-of-type(1) {
+            background-image: url(../images/zyl_banner5.jpeg);
+        }
+        > div:nth-of-type(2) {
+            background-image: url(../images/zyl_banner.jpeg);
+        }
+        > div:nth-of-type(3) {
+            background-image: url(../images/zyl_banner2.jpeg);
+        }
+        > div:nth-of-type(4) {
+            background-image: url(../images/zyl_banner3.jpeg);
+        }
+        > div:nth-of-type(5) {
+            background-image: url(../images/zyl_banner4.jpg);
+        }
+        > div:nth-of-type(6) {
+            background-image: url(../images/zyl_banner5.jpeg);
+        }
+        > div:nth-of-type(7) {
+            background-image: url(../images/zyl_banner.jpeg);
+        }
+    }
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -20px;
+}
+.swiper-pagination-bullet {
+    width: 0.1rem;
+    height: 0.1rem;
+}
+
+/* 内容 */
+.content {
+    display: none;
+    overflow: hidden;
+    padding-left: 0.22rem; 
+    padding-right: 0.22rem;
+    font-size: 0.3rem;
+    background-color: #fff;
+    > .am-g {
+        border-bottom: 1px solid #efefef; 
+        > div {
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            > img {
+                display: block;
+                width: 1.92rem;
+                height: 1.28rem;
+            }
+            span {
+                font-size: 0.24rem;
+                color: #c1c1c1;
+                line-height: 0.28rem;
+            }
+            .eyes {
+                width: 0.95rem;
+                background-image: url(../images/zyl_eyes.png);
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: 15px 9px;
+                padding-left: 0.3rem;
+            }
+        }
+
+    }
+    // > .am-g:nth-of-type(n+6) {
+    //     display: none;
+    // }
+}
+/* 配合内容 两个类名具备内容才会展示 js内实现 */ 
+.show {
+    display: block;
+}
+/* 加载中 */
+.load {
+    height: 0.8rem;
+    line-height: 0.75rem;
+    font-size: 0.24rem;
+    text-align: center;
+    background-color: #fff;
+    i {
+        font-size: 0.3rem;   
+    }
+}
+
+/* 底部 */
+.footer {
+    padding-top: 0.6rem; 
+    padding-bottom: 0.5rem; 
+    font-size: 0.24rem;
+    text-align: center;
+    a {
+        font-weight: 700;
+    }
+}
+
+/* 侧边栏 */
+.am-offcanvas {
+    .am-offcanvas-bar {
+        width: 5.4rem;
+        font-size: 0.24rem;
+        background-color: #fff;
+        box-shadow: 2.5px 0px 7.5px rgba(0,0,0,.1);
+        &::after {
+            background-color: #fff;
+            width: 0;
+        }
+        > .am-offcanvas-content {
+            padding: 0;
+            > .title {
+                position: relative;
+                height: 2rem;
+                background-image: url(../images/zyl_login_bg.png);
+                background-size: cover;
+                > img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 1.16rem;
+                    height: 1.16rem;
+                }
+            }
+            .am-nav-tabs {
+                border: none;
+                > li.am-active > a,.am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover {
+                    color: @baseColor;
+                    border: none;
+                }
+            }
+            .am-nav>li>a {
+                font-size: 0.32rem;
+                padding-top: 0.26rem;
+                padding-left: 0.32rem; 
+                padding-right: 0.32rem;
+                border-bottom: none;
+            }
+            .am-nav-tabs>li>a {
+                margin: 0;
+            }
+            .am-tabs-bd {
+                border: none;
+                padding-left: 0.2rem;
+                padding-right: 0.2rem;
+                .am-form {
+                    > input:nth-of-type(-n+2) {
+                        font-size: 0.28rem;
+                        border: none;
+                        border-bottom: 1px solid #ccc;
+                        padding-bottom: 0.2rem;
+                        margin-top: 0.4rem;
+                    }
+                    > .code {
+                        float: right;
+                        width: 1.3rem;
+                        height: 0.5rem;
+                        line-height: 0.5rem;
+                        color: @baseColor;
+                    }
+                    > .form-login {
+                        display: block;
+                        margin-top: 0.3rem; 
+                        text-align: center;
+                        height: 0.8rem;
+                        line-height: 0.8rem;
+                        color: #fff;
+                        font-size: 0.32rem;
+                        border-radius: 0.1rem;
+                        background-color: rgba(14, 144, 210, 0.5);
+                    }
+                    > div {
+                        margin-top: 0.4rem;
+                        a {
+                            // width: 3.5rem;
+                            padding-left: 0.15rem; 
+                        }
+                    }                    
+                } 
+                .other-login {
+                    position: relative;
+                    text-align: center;
+                    margin-top: 0.5rem;
+                    color: #333;
+                    font-size: 0.28rem;
+                    &::before,&::after {
+                        content: '';
+                        position: absolute;
+                        width: 1.37rem;
+                        height: 1px;
+                        background-color: #dbdbdb;
+                        top: 50%;
+                    }
+                    &::before {
+                        left: 0;
+                    }
+                    &::after {
+                        right: 0;
+                    }
+                }
+                .icon {
+                    > li {
+                        float: left;
+                        padding: 0.256rem;
+                    }
+                }
+            }
+        }
+    }
+    .am-btn-primary {
+        background-color: transparent;
+        color: rgba(14, 144, 210, 0.5);
+    }
+    .am-btn {
+        font-size: 0.6rem;
+        padding-top: 0.1rem;
+        padding-left: 0.2rem; 
+    }    
+}
+

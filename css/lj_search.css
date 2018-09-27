@@ -1,0 +1,117 @@
+body {
+  font-size: 0.24rem !important;
+}
+p,
+h1,
+h4 {
+  margin-bottom: 0 !important;
+}
+h6,
+h2,
+p,
+h1 {
+  margin-top: 0 !important;
+}
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.lj_sHeader {
+  width: 6.4rem;
+  height: 0.88rem;
+  background-color: #118bd0;
+  color: #fff;
+  z-index: 10;
+}
+.lj_sHeader > a {
+  display: inline-block;
+  width: 0.88rem;
+  line-height: 0.88rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+.lj_sHeader > a i::before {
+  content: "\f104";
+  font-size: 0.48rem;
+  color: #fff;
+  line-height: 0.88rem;
+}
+.lj_sHeader > h1 {
+  font-size: 0.34rem;
+  line-height: 0.88rem;
+  text-align: center;
+}
+.lj_sNav {
+  width: 6.4rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  padding: 0.3rem 0;
+  position: relative;
+}
+.lj_sNav > .lj_sSearch {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  line-height: 0.88rem;
+  padding: 0 0.26rem;
+  left: 0;
+}
+.lj_sNav > .lj_sSearch > i::before {
+  content: "\f002";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.2rem;
+  font-size: 0.3rem;
+}
+.lj_sNav > .lj_sSearch > input {
+  width: 4.82rem;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  border: none;
+  background-color: #f3f4f5;
+  border-radius: 0.1rem;
+  padding-left: 0.6rem;
+}
+.lj_sNav > .lj_sSearch > span {
+  height: 0.5rem;
+  line-height: 0.54rem;
+  margin-left: 0.3rem;
+  font-size: 0.3rem;
+}
+.lj_sNav > .lj_sCon {
+  position: absolute;
+  top: 0.80rem;
+  left: 0;
+  padding: 0.2rem 0.26rem;
+}
+.lj_sNav > .lj_sCon > h4 {
+  font-size: 0.28rem;
+  color: #333;
+}
+.lj_sNav > .lj_sCon > ul {
+  overflow: hidden;
+}
+.lj_sNav > .lj_sCon > ul > li {
+  float: left;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0 0.3rem;
+  font-size: 0.24rem;
+  background: #eee;
+  color: #666;
+}
+.lj_seT {
+  position: fixed;
+  top: 4rem;
+  left: 1.6rem;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.69);
+  font-size: 0.32rem;
+  color: #fff;
+  z-index: 2000;
+  display: none;
+}

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>课程分类</title>
+
+    <link rel="stylesheet" href="./../css/amazeui.min.css">
+    <link rel="stylesheet" href="./../css/base.css">
+    <link rel="stylesheet" href="./../css/zyp-lesson-more.css">
+    <script src="./../js/jquery-3.3.1.min.js"></script>
+    <script src="./../js/amazeui.js"></script>
+    <script src="./../js/fastclick.js"></script>
+    <script src="./../js/common.js"></script>
+    <script src="./../js/loading_animation.js"></script>
+</head>
+
+<body onload = 'aload()'>
+    <div class="load_animation">
+        <i class="load_icon"></i>
+    </div>
+    <div class="lesson_layout">
+        <!-- 回到顶部按钮 -->
+        <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+            <a href="./zyp-lesson_fir.html" title="">
+                <i class="am-gotop-icon am-icon-hand-o-up"></i>
+            </a>
+        </div>
+        <header data-am-widget="header" class="am-header am-header-default">
+            <div class="am-header-left am-header-nav">
+                <a href="./zyp-lesson_fir.html" class="back_link">
+                    <i class="am-header-icon am-icon-home"></i>
+                </a>
+            </div>
+            <h1 class="am-header-title">
+                课程分类
+            </h1>
+            <div class="am-header-right am-header-nav">
+                <a href="zyp-login.html" class="login_link">
+                    <img src="./../images/zhj-jk-01.jpg"  class="active">
+                    <i class="am-header-icon am-icon-user"></i>
+                </a>
+            </div>
+        </header>
+        <div class="tab_box">
+            <div class="tab_nav">
+                <ul>
+                    <li class="active"><a href="javascript:;">热销排行</a></li>
+                    <li><a href="javascript:;">免费排行</a></li>
+                    <li><a href="javascript:;">个人成长</a></li>
+                    <li><a href="javascript:;">两性情感</a></li>
+                    <li><a href="javascript:;">人际关系</a></li>
+                    <li><a href="javascript:;">家庭亲子</a></li>
+                    <li><a href="javascript:;">心理健康</a></li>
+                </ul>
+            </div>
+            <div class="tab_bd">
+                <ul>
+                    <li class="active">
+                        <ul class="class_lesson_box">
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide01.jpg&h='【热销】如何过好这一生'&price='199元'&join=715">
+                                    <div class="fl lesson_c_left">
+                                        <h2>【热销】如何过好这一生</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;199</span>
+                                            <span class="peopleIn">715人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide01.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide02.jpg&h='心理咨询师平台'&price='89元'&join=85">
+                                    <div class="fl lesson_c_left">
+                                        <h2>心理咨询师平台</h2>
+                                        <p class="price_old"><s>&yen;399</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;89</span>
+                                            <span class="peopleIn">85人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide02.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide03.jpg&h='朱建军的24堂解梦课，成为自己的解梦师'&price='36元'&join=45">
+                                    <div class="fl lesson_c_left">
+                                        <h2>朱建军的24堂解梦课，成为自己的解梦师</h2>
+                                        <p class="price_old"><s>&yen;120</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;36</span>
+                                            <span class="peopleIn">45人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide03.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide04.jpg&h='爱不分性别，同性之恋困扰指南'&price='89元'&join=36">
+                                    <div class="fl lesson_c_left">
+                                        <h2>爱不分性别，同性之恋困扰指南</h2>
+                                        <p class="price_old"><s>&yen;219</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;89</span>
+                                            <span class="peopleIn">36人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide04.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide05.jpg&h='童年缺失的心理营养，如何在成年后补足？'&price='200元'&join=38">
+                                    <div class="fl lesson_c_left">
+                                        <h2>童年缺失的心理营养，如何在成年后补足？</h2>
+                                        <p class="price_old"><s>&yen;599</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;200</span>
+                                            <span class="peopleIn">38人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide05.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide06.jpg&h='每天3分钟，获得一个心理知识 | 3分钟心理学'&price='108元'&join=63">
+                                    <div class="fl lesson_c_left">
+                                        <h2>每天3分钟，获得一个心理知识 | 3分钟心理学</h2>
+                                        <p class="price_old"><s>&yen;475</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;108</span>
+                                            <span class="peopleIn">63人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide06.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide33.jpg&h='自我进化'&price='199元'&join=715">
+                                    <div class="fl lesson_c_left">
+                                        <h2>自我进化</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;199</span>
+                                            <span class="peopleIn">715人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide33.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide34.jpg&h='心理学经营家庭婚姻'&price='89元'&join=85">
+                                    <div class="fl lesson_c_left">
+                                        <h2>心理学经营家庭婚姻</h2>
+                                        <p class="price_old"><s>&yen;399</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;89</span>
+                                            <span class="peopleIn">85人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide34.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide31.jpg&h='30堂爱情必修课，做个被宠爱的聪明女人'&price='36元'&join=45">
+                                    <div class="fl lesson_c_left">
+                                        <h2>30堂爱情必修课，做个被宠爱的聪明女人</h2>
+                                        <p class="price_old"><s>&yen;120</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;36</span>
+                                            <span class="peopleIn">45人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide31.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide32.jpg&h='童年缺失的心理营养，如何在成年后补足？'&price='89元'&join=36">
+                                    <div class="fl lesson_c_left">
+                                        <h2>童年缺失的心理营养，如何在成年后补足？</h2>
+                                        <p class="price_old"><s>&yen;219</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;89</span>
+                                            <span class="peopleIn">36人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide32.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide35.jpg&h='如何利用心理学突破限制'&price='200元'&join=38">
+                                    <div class="fl lesson_c_left">
+                                        <h2>如何利用心理学突破限制</h2>
+                                        <p class="price_old"><s>&yen;599</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;200</span>
+                                            <span class="peopleIn">38人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide35.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide36.jpg&h='每天一个心理学效应'&price='108元'&join=63">
+                                    <div class="fl lesson_c_left">
+                                        <h2>每天一个心理学效应</h2>
+                                        <p class="price_old"><s>&yen;475</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;108</span>
+                                            <span class="peopleIn">63人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide36.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="display_all">已全部展示</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="class_lesson_box">
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide03.jpg&h='成为自己的解梦师'&price='免费'&join=2185">
+                                    <div class="fl lesson_c_left">
+                                        <h2>【免费】成为自己的解梦师</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">免费</span>
+                                            <span class="peopleIn">2185人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide03.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide09.jpg&h='如何找到文化自信'&price='免费'&join=325">
+                                    <div class="fl lesson_c_left">
+                                        <h2>如何找到文化自信</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">免费</span>
+                                            <span class="peopleIn">325人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide09.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide09.jpg&h='咨询师疗法入门'&price='免费'&join=635">
+                                    <div class="fl lesson_c_left">
+                                        <h2>咨询师疗法入门</h2>
+                                        <p class="price_old"><s>&yen;131</s></p>
+                                        <p>
+                                            <span class="lesson_price">免费</span>
+                                            <span class="peopleIn">635人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide05.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide06.jpg&h='林紫的100堂心理课：探索自我，挖掘潜能'&price='免费'&join=3321">
+                                    <div class="fl lesson_c_left">
+                                        <h2>林紫的100堂心理课：探索自我，挖掘潜能</h2>
+                                        <p class="price_old"><s>&yen;119</s></p>
+                                        <p>
+                                            <span class="lesson_price">免费</span>
+                                            <span class="peopleIn">3321人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide06.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide07.jpg&h='童年缺失的心理营养，如何在成年后补足？'&price='免费'&join=1254">
+                                    <div class="fl lesson_c_left">
+                                        <h2>童年缺失的心理营养，如何在成年后补足？</h2>
+                                        <p class="price_old"><s>&yen;299</s></p>
+                                        <p>
+                                            <span class="lesson_price">免费</span>
+                                            <span class="peopleIn">1254人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide07.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide08.jpg&h='30堂爱情必修课，做个被宠爱的聪明女人'&price='免费'&join=3136">
+                                    <div class="fl lesson_c_left">
+                                        <h2>30堂爱情必修课，做个被宠爱的聪明女人</h2>
+                                        <p class="price_old"><s>&yen;99</s></p>
+                                        <p>
+                                            <span class="lesson_price">免费</span>
+                                            <span class="peopleIn">3136人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide08.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="display_all">已全部展示</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="class_lesson_box">
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide08.jpg&h='时间管理速成指南'&price='99元'&join=47">
+                                    <div class="fl lesson_c_left">
+                                        <h2>【个人】时间管理速成指南</h2>
+                                        <p class="price_old"><s>&yen;299</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;99</span>
+                                            <span class="peopleIn">47人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide08.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide07.jpg&h='走出抑郁，学会自我疗愈'&price='121元'&join=21">
+                                    <div class="fl lesson_c_left">
+                                        <h2>走出抑郁，学会自我疗愈</h2>
+                                        <p class="price_old"><s>&yen;311</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;121</span>
+                                            <span class="peopleIn">21人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide07.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide06.jpg&h='每日正念10分钟，告别心理亚健康'&price='199元'&join=43">
+                                    <div class="fl lesson_c_left">
+                                        <h2>每日正念10分钟，告别心理亚健康</h2>
+                                        <p class="price_old"><s>&yen;599</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;199</span>
+                                            <span class="peopleIn">43人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide06.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide09.jpg&h='反脆弱：塑造强大内心'&price='19元'&join=93">
+                                    <div class="fl lesson_c_left">
+                                        <h2>反脆弱：塑造强大内心</h2>
+                                        <p class="price_old"><s>&yen;99</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;19</span>
+                                            <span class="peopleIn">93人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide09.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide09.jpg&h='情绪舵手：做情绪的主人'&price='49元'&join=33">
+                                    <div class="fl lesson_c_left">
+                                        <h2>情绪舵手：做情绪的主人</h2>
+                                        <p class="price_old"><s>&yen;289</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;49</span>
+                                            <span class="peopleIn">33人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide10.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide11.jpg&h='性格剖析：如何用心理学认识自己？'&price='89元'&join=66">
+                                    <div class="fl lesson_c_left">
+                                        <h2>性格剖析：如何用心理学认识自己？</h2>
+                                        <p class="price_old"><s>&yen;219</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;89</span>
+                                            <span class="peopleIn">66人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide11.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="display_all">已全部展示</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="class_lesson_box">
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide31.jpg&h='爱不分性别，同性之恋困扰指南'&price='34元'&join=85">
+                                    <div class="fl lesson_c_left">
+                                        <h2>【情感】爱不分性别，同性之恋困扰指南</h2>
+                                        <p class="price_old"><s>&yen;300</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;34</span>
+                                            <span class="peopleIn">85人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide31.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide32.jpg&h='告别单身，用心理学找到对的人'&price='29元'&join=24">
+                                    <div class="fl lesson_c_left">
+                                        <h2>告别单身，用心理学找到对的人</h2>
+                                        <p class="price_old"><s>&yen;149</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;29</span>
+                                            <span class="peopleIn">24人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide32.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide33.jpg&h='亲密而独立，洞悉爱情的二十堂心理课'&price='8元'&join=31">
+                                    <div class="fl lesson_c_left">
+                                        <h2>亲密而独立，洞悉爱情的二十堂心理课</h2>
+                                        <p class="price_old"><s>&yen;88</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;8</span>
+                                            <span class="peopleIn">31人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide33.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide34.jpg&h='心理学家教你如何避免出轨'&price='免费'&join=789">
+                                    <div class="fl lesson_c_left">
+                                        <h2>心理学家教你如何避免出轨</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">免费</span>
+                                            <span class="peopleIn">789人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide34.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide35.jpg&h='伴侣间如何一键停止争吵？'&price='339元'&join=57">
+                                    <div class="fl lesson_c_left">
+                                        <h2>伴侣间如何一键停止争吵？</h2>
+                                        <p class="price_old"><s>&yen;899</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;399</span>
+                                            <span class="peopleIn">57人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide35.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide36.jpg&h='爱情宝典：赢得爱情长跑'&price='36元'&join=82">
+                                    <div class="fl lesson_c_left">
+                                        <h2>爱情宝典：赢得爱情长跑</h2>
+                                        <p class="price_old"><s>&yen;999</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;36</span>
+                                            <span class="peopleIn">82人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide36.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="display_all">已全部展示</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="class_lesson_box">
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide37.jpg&h='人人都需要的沟通谈判术，成为一开口就赢的人'&price='99元'&join=288">
+                                    <div class="fl lesson_c_left">
+                                        <h2>【人际】人人都需要的沟通谈判术，成为一开口就赢的人</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;99</span>
+                                            <span class="peopleIn">288人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide37.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide38.jpg&h='为什么孩子总不听你的'&price='3元'&join=38">
+                                    <div class="fl lesson_c_left">
+                                        <h2>为什么孩子总不听你的</h2>
+                                        <p class="price_old"><s>&yen;99</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;3</span>
+                                            <span class="peopleIn">38人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide38.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide08.jpg&h='成为心理咨询师的路径'&price='199元'&join=5">
+                                    <div class="fl lesson_c_left">
+                                        <h2>成为心理咨询师的路径</h2>
+                                        <p class="price_old"><s>&yen;599</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;199</span>
+                                            <span class="peopleIn">5人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide08.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide11.jpg&h='临床与心理专业硕士水平培训'&price='59元'&join=26">
+                                    <div class="fl lesson_c_left">
+                                        <h2>临床与心理专业硕士水平培训</h2>
+                                        <p class="price_old"><s>&yen;799</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;59</span>
+                                            <span class="peopleIn">26人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide11.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide21.jpg&h='探索自己的100种潜能'&price='259元'&join=36">
+                                    <div class="fl lesson_c_left">
+                                        <h2>探索自己的100种潜能</h2>
+                                        <p class="price_old"><s>&yen;479</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;259</span>
+                                            <span class="peopleIn">36人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide21.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="display_all">已全部展示</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="class_lesson_box">
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide22.jpg&h='如何用心理学经营你的婚姻家庭？'&price='99元'&join=385">
+                                    <div class="fl lesson_c_left">
+                                        <h2>【家庭】如何用心理学经营你的婚姻家庭？</h2>
+                                        <p class="price_old"><s>&yen;149</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;99</span>
+                                            <span class="peopleIn">385人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide22.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide05.jpg&h='重塑家庭成长，如何让家不再伤人？'&price='199元'&join=663">
+                                    <div class="fl lesson_c_left">
+                                        <h2>重塑家庭成长，如何让家不再伤人？</h2>
+                                        <p class="price_old"><s>&yen;799</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;199</span>
+                                            <span class="peopleIn">663人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide05.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide07.jpg&h='心理学家7天教你搞定“熊孩子”'&price='69元'&join=222">
+                                    <div class="fl lesson_c_left">
+                                        <h2>心理学家7天教你搞定“熊孩子”</h2>
+                                        <p class="price_old"><s>&yen;299</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;69</span>
+                                            <span class="peopleIn">222人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide07.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide09.jpg&h='如何找到文化自信'&price='33元'&join=555">
+                                    <div class="fl lesson_c_left">
+                                        <h2>如何找到文化自信</h2>
+                                        <p class="price_old"><s>&yen;333</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;33</span>
+                                            <span class="peopleIn">555人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide09.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide11.jpg&h='如何与我的内在小孩相处？'&price='54元'&join=666">
+                                    <div class="fl lesson_c_left">
+                                        <h2>如何与我的内在小孩相处？</h2>
+                                        <p class="price_old"><s>&yen;299</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;54</span>
+                                            <span class="peopleIn">666人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide11.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="display_all">已全部展示</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="class_lesson_box">
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide33.jpg&h='怎么培养出情商比自己高的孩子'&price='29元'&join=23">
+                                    <div class="fl lesson_c_left">
+                                        <h2>【心理】《变形计》心理专家：怎么培养出情商比自己高的孩子？</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;29</span>
+                                            <span class="peopleIn">23人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide33.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide21.jpg&h='如何拯救有毒的坏情绪，收获从容自我？'&price='9元'&join=71">
+                                    <div class="fl lesson_c_left">
+                                        <h2>如何拯救有毒的坏情绪，收获从容自我？</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;9</span>
+                                            <span class="peopleIn">71人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide21.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide31.jpg&h='买房、结婚、工作、原生家庭！'&price='31元'&join=22">
+                                    <div class="fl lesson_c_left">
+                                        <h2>毕淑敏揭秘90后幸福答案 ：买房、结婚、工作、原生家庭！</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;31</span>
+                                            <span class="peopleIn">22人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide31.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide07.jpg&h='情绪解压能量包'&price='9元'&join=888">
+                                    <div class="fl lesson_c_left">
+                                        <h2>情绪解压能量包</h2>
+                                        <p class="price_old"><s>&yen;99</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;9</span>
+                                            <span class="peopleIn">888人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide07.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide05.jpg&h='如何用心理学解决你的难题'&price='19元'&join=3">
+                                    <div class="fl lesson_c_left">
+                                        <h2>升级生命软件：如何用心理学解决你的难题</h2>
+                                        <p class="price_old"><s>&yen;199</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;19</span>
+                                            <span class="peopleIn">3人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide05.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./zyl_shop.html?image=../images/zyp-slide06.jpg&h='情绪解压能量包'&price='9元'&join=5">
+                                    <div class="fl lesson_c_left">
+                                        <h2>情绪解压能量包</h2>
+                                        <p class="price_old"><s>&yen;99</s></p>
+                                        <p>
+                                            <span class="lesson_price">&yen;9</span>
+                                            <span class="peopleIn">5人学习</span>
+                                        </p>
+                                    </div>
+                                    <div class="fr right_pic">
+                                        <img src="./../images/zyp-slide06.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="display_all">已全部展示</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/zyp-lesson-more.js"></script>
+</body>
+
+</html>

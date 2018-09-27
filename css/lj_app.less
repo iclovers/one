@@ -1,0 +1,158 @@
+body{
+    font-size: 12/50rem !important;
+    max-width: 6.4rem;
+}
+p,h1,h4{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+h6,h2,p{
+    margin-top: 0 !important;
+}
+
+.wrap{
+    .header{
+        position: relative;
+        height: 237/50rem;
+        margin-bottom: 8/50rem;
+        // background-color: pink;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+        >.lj_hImg{
+            height: 237/50rem;
+        }
+        >.lj_applogo{
+            position: absolute;
+            top: 10/50rem;
+            left: 10/50rem;
+            background: url(../images/lj_loadlogo.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 90/50rem;
+            height: 25/50rem;
+        }
+        >.lj_appIco{
+            position: absolute;
+            top: 15/50rem;
+            left: 50%;
+            transform: translate(-50%);
+            background: url(../images/lj_app.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 80/50rem;
+            height: 80/50rem;
+        }
+        >.lj_appTitle{
+           position: absolute;
+           top: 100/50rem;
+           left: 50%;
+            transform: translate(-50%);
+            font-size: 18/50rem;
+            text-align: center;
+            color: #3a3a3a;
+            overflow: hidden;
+            >.lj_small{
+                line-height: 12px;
+                padding: 1px 2px 0;
+                border: 1px solid rgba(253,195,195,0.8);
+                font-size: 10px;
+                font-style: normal;
+                color: #da7272;
+                background-color: rgba(241,105,105,0.1);
+            }
+        }
+        >.lj_score{
+            position: absolute;
+            top: 130/50rem;
+            left: 50%;
+            transform: translate(-50%);
+            line-height: 14/50rem;
+            font-size: 12/50rem;
+            text-align: center;
+            color: #939393;
+            >span{
+                margin-left: 10/50rem;
+            }
+        }
+        >.lj_dian{
+            position: absolute;
+            top: 170/50rem;
+            left: 50%;
+            transform: translate(-50%);
+            height: 33px;
+            line-height: 33px;
+            background-color: #01a2f0;
+            box-shadow: 0 0 1px rgba(255,255,255,0.1) inset;
+            border-radius: 0;
+            width: 290/50rem;
+            text-align: center;
+            color: #fff;
+            >a{
+                color:#fff !important;
+            }
+        }
+    }
+    .content{
+        padding: 10/50rem;
+        >.lj_banner{
+            width: 272/50rem;
+            height: 272/50rem;
+        }
+        >.lj_detail{
+            margin-top: 10/50rem;
+            p{
+                height: 40/50rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            >.lj_ico{
+                position: absolute;
+                width: 20/50rem;
+                height: 20/50rem;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        >.lj_ban{
+            color: #939393;
+            font-size: 12/50rem;
+            line-height: 1.5;
+            padding-top: 10/50rem;
+            >.lj_tips{
+                margin: 10/50rem 0 2/50rem;
+                >span{
+                    width: 16/50rem;
+                    height: 14/50rem;
+                    margin-right: 20/50rem;
+                    >i{
+                        margin-right: 25/50rem;
+                        vertical-align: middle;
+                    }
+                    i::before{
+                        position: absolute;
+                        content: "";
+                        width: 16/50rem;
+                        height: 16/50rem;
+                        padding-right: 8/50rem; 
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    .lj_i1::before{
+                        left: 15/50rem;
+                        background-image: url(../images/lj_tips1.png);
+                    }
+                    .lj_i2::before{
+                        left: 95/50rem;
+                        background-image: url(../images/lj_tips2.png);
+                    }
+                    .lj_i3::before{
+                        left: 180/50rem;
+                        background-image: url(../images/lj_tips3.png);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+

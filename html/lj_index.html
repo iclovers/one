@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>壹心理·世界和我爱着你</title>
+    <link rel="stylesheet" href="../css/amazeui.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="lj_search.html">
+    <link rel="stylesheet" href="lj_hongbao.html">
+    <link rel="stylesheet" href="../css/lj_index.css">
+</head>
+
+<body onload='aload()'>
+    <!---------- 全屏加载页面 ------->
+    <div class="load_animation">
+        <i class="load_icon"></i>
+    </div>
+    <div class="layout lesson_layout">
+        <!------------ 顶部块 -------->
+        <div data-am-sticky style="height:0">
+            <div class="am-btn am-btn-primary am-btn-block lj_btnTop">
+                <div class="lj_headerList">
+                    <a href="javaScript:;" class="lj_topLogo"></a>
+                    <button data-am-smooth-scroll class="am-btn am-btn-success" id="lj_toTop">回到顶部</button>
+                    <a href="zyp-login.html" class="lj_person">个人中心</a>
+                    <a href="zyp-login.html" class="lj_mes">消息(1)</a>
+                    <a href="lj_search.html" class="lj_search am-icon-search"></a>
+                </div>
+            </div>
+        </div>
+        <!-- ---------头部块---------->
+        <!-- 显示的头部内容 -->
+        <div class="lj_indexhd">
+            <header class="lj_header">
+                <div class="lj_headerContent">
+                    <div class="lj_userContent">
+                        <div class="lj_userhead">
+                            <div class="lj_img">
+                                <img src="../images/lj_logo.png" alt="">
+                            </div>
+                            <div class="lj_xia">
+                                <i class="am-icon-bars"></i>
+                            </div>
+                        </div>
+                        <a href="lj_app.html" class="lj_userApp">
+                            <div class="lj_app">
+                                <img src="../images/lj_app.png" alt="">
+
+                            </div>
+                            <span>下载APP</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- 隐藏的头部内容 -->
+            <div class="lj_yheader">
+                <div class="lj_yinHd">
+                    <div class="lj_yin">
+                        <div class="lj_img">
+                            <img src="../images/lj_logo.png" alt="">
+                            <i class="am-icon-align-center lj_xia"></i>
+                        </div>
+                    </div>
+                    <div class="lj_userPerson">
+                        <a href="javaScript:;"><span class="am-icon-envelope-o lj_uIco"></span><span>消息(1)</span></a>
+                        <a href="javaScript:;"><span class="am-icon-user lj_uIco"></span><span>个人中心</span></a>
+                    </div>
+                    <div class="lj_linkList">
+                        <a href="javaScript:;">
+                            <div class="lj_link" style="background-image: url(../images/lj_link1.png);"></div>
+                            <span>邀请领福利</span>
+                        </a>
+                        <a href="qcz_diary.html">
+                            <div class="lj_link" style="background-image: url(../images/lj_link2.png);"></div>
+                            <span>心理日记</span>
+                        </a>
+                        <a href="javaScript:;">
+                            <div class="lj_link" style="background-image: url(../images/lj_link3.jpg);"></div>
+                            <span>心理FMapp</span>
+                        </a>
+                        <a href="javaScript:;">
+                            <div class="lj_link" style="background-image: url(../images/lj_link4.png);"></div>
+                            <span>公众号</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索框 -->
+            <a href="lj_search.html" class="lj_searchContent">
+                <input type="text" placeholder="大家都在搜：抑郁清单、恋爱">
+                <i class="am-icon-search"></i>
+            </a>
+        </div>
+        <!-- ------section(内容块)------->
+        <section class="lj_mainContent">
+            <div class="lj_toolbar clearfix">
+                <a href="sq-test.html"><img src="../images/lj_toolbar1.jpg" alt="">
+                    <p>做测试</p>
+                </a>
+                <a href="zyp-lesson_fir.html"><img src="../images/lj_toolbar2.jpg" alt="">
+                    <p>学课程</p>
+                </a>
+                <a href="javaScript:;"><img src="../images/lj_toolbar3.jpg" alt="">
+                    <p>问心事</p>
+                </a>
+                <a href="zyl_read.html"><img src="../images/lj_toolbar4.jpg" alt="">
+                    <p>读文章</p>
+                </a>
+                <a href="nml-test.html"><img src="../images/lj_toolbar5.jpg" alt="">
+                    <p>做咨询</p>
+                </a>
+            </div>
+            <div class="lj_stratety clearfix">
+                <a href="javaScript:void(0);">
+                    <div class="lj_navImg" style="background-image: url(../images/lj_nav1.jpg);"></div>
+                    <h6>我有心事</h6>
+                    <p>专业倾听师为你解忧</p>
+                </a>
+                <a href="javaScript:void(0);">
+                    <div class="lj_navImg" style="background-image: url(../images/lj_nav2.jpg);"></div>
+                    <h6>倾听抑郁</h6>
+                    <p>倾听来自抑郁患者的声音</p>
+                </a>
+                <a href="javaScript:void(0);">
+                    <div class="lj_navImg" style="background-image: url(../images/lj_nav3.jpg);"></div>
+                    <h6>靠谱指南</h6>
+                    <p>如何选择心理咨询师？</p>
+                </a>
+            </div>
+            <div class="lj_theme">
+                <a href="javaScript:void(0);" class="lj_thOne">
+                    <div class="lj_img" style="background-image: url(../images/lj_theme4.jpg);"></div>
+                    <h2>#人物观察</h2>
+                    <p>16篇精选·那些被热议的心理学人物~</p>
+                    <span class="lj_focus"><i class="am-icon-heart-o lj_foIco"></i>关注</span>
+                </a>
+                <a href="javaScript:void(0);" class="lj_thTwo">
+                    <div class="lj_thLeft">
+                        <h2>梅西:你是自己的王，不<br>是任何人的神！</h2>
+                        <p>我们总以为找到一个强人，把自己完全托付给他就是幸福。但总有一天，才会发现：有很多路需要自己一个人走，有很多困难需要自己克服......</p>
+                    </div>
+                    <div class="lj_thRight"><img src="../images/lj_theme2.jpeg" alt=""></div>
+                </a>
+            </div>
+            <div class="lj_theme">
+                <a href="javaScript:void(0);" class="lj_thOne">
+                    <div class="lj_img" style="background-image: url(../images/lj_theme1.jpg);"></div>
+                    <h2>#电影里的心理学</h2>
+                    <p>32篇精选·电影故事 & 人格与动机 & 心理学</p>
+                    <span class="lj_focus lj_focus1"><i class="am-icon-heart-o lj_foIco1"></i>关注</span>
+                </a>
+                <a href="javaScript:void(0);" class="lj_thTwo">
+                    <div class="lj_thLeft">
+                        <h2>“你让孩子成为了小<br>偷。”&nbsp;&nbsp;“那是我能给的最好的爱！”</h2>
+                        <p>我总是期盼看电影的人回到日常生活时，对日常生活的看法能有所改变，能成为他们改掉用批判性眼光看待日常生活的契机。</p>
+                    </div>
+                    <div class="lj_thRight"><img src="../images/lj_theme3.jpeg" alt=""></div>
+                </a>
+            </div>
+            <!-- 心理播单 -->
+            <div class="lj_fmList">
+                <div class="lj_box">
+                    <a href="javaScript:;">
+                        <div class="lj_fmLeft lj_fmLeft1">
+                            <span>心理播单</span>
+                            <img src="../images/lj_xin0.png" alt="">
+                        </div>
+                        <div class="lj_fmRight">
+                            <h4>人际交往的10条「潜规则」，提高情商必备</h4>
+                            <p>1. 什么是好的陪伴</p>
+                            <p>2. 深到骨子里的教养，是不随意评价他人</p>
+                            <p>3. 水不试不知深浅，人不交不知好坏</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="lj_box">
+                    <a href="javaScript:;">
+                        <div class="lj_fmLeft lj_fmLeft2">
+                            <span>心理播单</span>
+                            <img src="../images/lj_xin0.png" alt="">
+                        </div>
+                        <div class="lj_fmRight">
+                            <h4>人际交往的10条「潜规则」，提高情商必备</h4>
+                            <p>1. 什么是好的陪伴</p>
+                            <p>2. 深到骨子里的教养，是不随意评价他人</p>
+                            <p>3. 水不试不知深浅，人不交不知好坏</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="lj_entrance">
+                <a href="javaScript:;"><span>我要倾诉</span></a>
+                <a href="javaScript:;"></a>
+            </div>
+        </section>
+        <!-- -------section(心情块)----------->
+        <section class="lj_essenceContent">
+            <div class="am-tabs lj_essenceNav" data-am-tabs="{noSwipe: 1}">
+                <ul class="am-tabs-nav am-nav am-nav-tabs lj_eHeader">
+                    <li class="am-active"><a href="#tab2-1">最新好文</a></li>
+                    <li><a href="#tab2-2">30天精华问答</a></li>
+                    <li><a href="#tab2-3">热门测试</a></li>
+                    <li><a href="#tab2-4">热播FM</a></li>
+                </ul>
+                <div class="am-tabs-bd lj_eBody">
+                    <!-- 最新文章 -->
+                    <div class="am-tab-panel am-fade am-in am-active lj_esBox" id="tab2-1">
+                        <ul class="content" style="display: block">
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>从大S被群嘲，谈女性角色新鲜的可能性—— </h2>
+                                            <p>在《幸福三重奏》中，大S拥有最<br>不同的婚姻关系，和完全不同的“做女人梦想”。她让我们看到了，即便是在婚姻关系中，女性依然可以有新的选择。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art11.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：婚恋</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>争吵时的气度，可以看出一个人的本质</h2>
+                                            <p>当个“好好先生”很容易，大家<br>互不干扰，但是这样也很难产生真正的心灵交流。正如一味地逃避争吵也只能带来表面的和平，不能为关系带来长治久安的美好。必要时有风度的争吵，能推动关系的进一步发展。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art12.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：高浩容</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>心理学小孩的命，都是学习给的</h2>
+                                            <p>心理学学生的日常是什么？是去<br>测犯罪嫌疑人有没有说谎吗？是天天胡乱编写测试吗？都不是！心理学小孩要学习普通心理学发展心理学教育心理学心理测量心理统计……总之，不算命！</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art13.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：京师心理大学堂</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>女儿远嫁，父亲跳楼：做人，最好自私一点 </h2>
+                                            <p>台湾作家龙应台说，父母对孩子<br>强烈的付出感，其实是一种借爱勒索，而借爱勒索的本质，是勒索，而不是爱。年轻的时候，你选择为了他不去看世界，并不意味着你老了，人家就应该为了你，也放弃看世界的机会。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art13.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：成长</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>成熟的人格，就是学会改变别人。 | 丛非从</h2>
+                                            <p>成熟的人格，首先要学会从别人<br>身上找原因。其次是策略、情境，最后才是从自己身上找原因。这才是最让人舒服的。就是首先学会改变别人，最后才是自我。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art3.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：丛非从</div>
+                                </div>
+                            </li>
+                            <!-- 需要被隐藏的部分 -->
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>真惨……三观不合从来不是关系破裂的真正原因 </h2>
+                                            <p>一个人感情里的成熟，始于你不<br>再一味干涉或批判与你不同的价值观，开始真正站在别人的角度思考问题。因为我对你有同理心，即使三观不同，但我也会尽力理解。如果你选择坚持你自己，我就愿意在你背后支持你。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art1.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：壹心理主笔团</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>最招人反感的关系，其实是这一种 </h2>
+                                            <p>人并非生来就强大，每个人都有<br>着脆弱敏感的一面。但是过度敏感的人，往往很难处理好社交关系，他们有时不仅需要承担自己的情绪，还需要额外承担别人的情绪。希望我们都能培养一点“钝感力”</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art5.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：社交专栏</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“你害怕孤独，才会觉得孤独不好” | 悦读心时光 </h2>
+                                            <p>知乎上有一个很热门的问题：你<br>最孤独的时刻是什么？。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art15.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>性禁锢和性泛滥是爱情的大敌#一周日签排行榜 </h2>
+                                            <p>#一周日签排行榜#心理学家霍金<br>斯在关于各类情感能量等级的分析中，把羞愧排在最低位，其次是内疚，认为羞愧和内疚是人对自己伤害最大的不良情绪，负面分数超过悲伤，愤怒和恐惧。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art4.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：壹心理主笔团</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“让快乐的瞬间，回击糟糕的日子。” | 悦读心时光 </h2>
+                                            <p>抑郁症很可怕，但更可怕的是没<br>有人相信你得了抑郁症，并把此当成了笑话。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art14.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="content" style="display:none">
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“你害怕孤独，才会觉得孤独不好” | 悦读心时光 </h2>
+                                            <p>知乎上有一个很热门的问题：你<br>最孤独的时刻是什么？。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art15.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>性禁锢和性泛滥是爱情的大敌#一周日签排行榜 </h2>
+                                            <p>#一周日签排行榜#心理学家霍金<br>斯在关于各类情感能量等级的分析中，把羞愧排在最低位，其次是内疚，认为羞愧和内疚是人对自己伤害最大的不良情绪，负面分数超过悲伤，愤怒和恐惧。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art4.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：壹心理主笔团</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“让快乐的瞬间，回击糟糕的日子。” | 悦读心时光 </h2>
+                                            <p>抑郁症很可怕，但更可怕的是没<br>有人相信你得了抑郁症，并把此当成了笑话。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art14.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>知乎热点：三观合就能幸福的在一起？这是一个谎言 </h2>
+                                            <p>什么是三观合？合到什么程度算<br>合？两个人之间一定会有分歧，这个才是绝大多数婚姻的真相。两个在不同背景，不同遗传，不同养育下长大的两个人，无论他们生活的轨迹有多少重合的点和段落，毕竟是两个独立的个体，对于很多事情都会有细微的差异。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art6.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：周小宽</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“让快乐的瞬间，回击糟糕的日子。” | 悦读心时光 </h2>
+                                            <p>抑郁症很可怕，但更可怕的是没<br>有人相信你得了抑郁症，并把此当成了笑话。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art14.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                            <!-- 需要被隐藏的部分 -->
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>从大S被群嘲，谈女性角色新鲜的可能性—— </h2>
+                                            <p>在《幸福三重奏》中，大S拥有最<br>不同的婚姻关系，和完全不同的“做女人梦想”。她让我们看到了，即便是在婚姻关系中，女性依然可以有新的选择。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art11.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：婚恋</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>争吵时的气度，可以看出一个人的本质</h2>
+                                            <p>当个“好好先生”很容易，大家<br>互不干扰，但是这样也很难产生真正的心灵交流。正如一味地逃避争吵也只能带来表面的和平，不能为关系带来长治久安的美好。必要时有风度的争吵，能推动关系的进一步发展。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art12.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：高浩容</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>心理学小孩的命，都是学习给的</h2>
+                                            <p>心理学学生的日常是什么？是去<br>测犯罪嫌疑人有没有说谎吗？是天天胡乱编写测试吗？都不是！心理学小孩要学习普通心理学发展心理学教育心理学心理测量心理统计……总之，不算命！</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art13.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：京师心理大学堂</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>女儿远嫁，父亲跳楼：做人，最好自私一点 </h2>
+                                            <p>台湾作家龙应台说，父母对孩子<br>强烈的付出感，其实是一种借爱勒索，而借爱勒索的本质，是勒索，而不是爱。年轻的时候，你选择为了他不去看世界，并不意味着你老了，人家就应该为了你，也放弃看世界的机会。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art13.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：成长</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>成熟的人格，就是学会改变别人。 | 丛非从</h2>
+                                            <p>成熟的人格，首先要学会从别人<br>身上找原因。其次是策略、情境，最后才是从自己身上找原因。这才是最让人舒服的。就是首先学会改变别人，最后才是自我。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art3.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：丛非从</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="content" style="display:none">
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“你害怕孤独，才会觉得孤独不好” | 悦读心时光 </h2>
+                                            <p>知乎上有一个很热门的问题：你<br>最孤独的时刻是什么？。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art15.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>性禁锢和性泛滥是爱情的大敌#一周日签排行榜 </h2>
+                                            <p>#一周日签排行榜#心理学家霍金<br>斯在关于各类情感能量等级的分析中，把羞愧排在最低位，其次是内疚，认为羞愧和内疚是人对自己伤害最大的不良情绪，负面分数超过悲伤，愤怒和恐惧。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art4.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：壹心理主笔团</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“让快乐的瞬间，回击糟糕的日子。” | 悦读心时光 </h2>
+                                            <p>抑郁症很可怕，但更可怕的是没<br>有人相信你得了抑郁症，并把此当成了笑话。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art14.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>知乎热点：三观合就能幸福的在一起？这是一个谎言 </h2>
+                                            <p>什么是三观合？合到什么程度算<br>合？两个人之间一定会有分歧，这个才是绝大多数婚姻的真相。两个在不同背景，不同遗传，不同养育下长大的两个人，无论他们生活的轨迹有多少重合的点和段落，毕竟是两个独立的个体，对于很多事情都会有细微的差异。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art6.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：周小宽</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>“让快乐的瞬间，回击糟糕的日子。” | 悦读心时光 </h2>
+                                            <p>抑郁症很可怕，但更可怕的是没<br>有人相信你得了抑郁症，并把此当成了笑话。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art14.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：心理FM</div>
+                                </div>
+                            </li>
+                            <!-- 需要被隐藏的部分 -->
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>从大S被群嘲，谈女性角色新鲜的可能性—— </h2>
+                                            <p>在《幸福三重奏》中，大S拥有最<br>不同的婚姻关系，和完全不同的“做女人梦想”。她让我们看到了，即便是在婚姻关系中，女性依然可以有新的选择。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art11.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：婚恋</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>争吵时的气度，可以看出一个人的本质</h2>
+                                            <p>当个“好好先生”很容易，大家<br>互不干扰，但是这样也很难产生真正的心灵交流。正如一味地逃避争吵也只能带来表面的和平，不能为关系带来长治久安的美好。必要时有风度的争吵，能推动关系的进一步发展。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art12.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：高浩容</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>心理学小孩的命，都是学习给的</h2>
+                                            <p>心理学学生的日常是什么？是去<br>测犯罪嫌疑人有没有说谎吗？是天天胡乱编写测试吗？都不是！心理学小孩要学习普通心理学发展心理学教育心理学心理测量心理统计……总之，不算命！</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art13.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：京师心理大学堂</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>女儿远嫁，父亲跳楼：做人，最好自私一点 </h2>
+                                            <p>台湾作家龙应台说，父母对孩子<br>强烈的付出感，其实是一种借爱勒索，而借爱勒索的本质，是勒索，而不是爱。年轻的时候，你选择为了他不去看世界，并不意味着你老了，人家就应该为了你，也放弃看世界的机会。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art13.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：成长</div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft">
+                                            <h2>成熟的人格，就是学会改变别人。 | 丛非从</h2>
+                                            <p>成熟的人格，首先要学会从别人<br>身上找原因。其次是策略、情境，最后才是从自己身上找原因。这才是最让人舒服的。就是首先学会改变别人，最后才是自我。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_art3.jpeg);"></div>
+                                    </a>
+                                    <div class="lj_peple">作者：丛非从</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 30天精华问答 -->
+                    <div class="am-tab-panel am-fade lj_asBox" id="tab2-2">
+                        <ul>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>【科普】想问心理咨询跟宗教劝人有什么区别呢？</h2>
+                                            <p>心理咨询中很多概念、理论都存在很多争议<br>的！有的甚至被证实是错误的，那我们在接<br>受治疗的过程中，如果被一些错误的观念疗愈了，那跟佛教有什么区别呢？我当初就是百分百相信心理咨询，就是因为相信他是通过科学的方法治愈内心，就像人生病了，是靠打针吃药来治好，而不是靠拜佛，招魂，驱鬼来治好一样！但是，现在心理咨询行业，有的老师用的都是一些科学证实过，是过时的甚至是错误的观点来疗愈我们，而这种疗愈是真的疗愈吗？跟佛教劝人又有何区别呢？万一是用伪科学的手法，或是如佛教般的理论来疗愈咨客，那算真正的疗愈吗？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:80</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>什么是好朋友，我们真的有朋友吗?</h2>
+                                            <p>曾经从小玩到大的朋友，小时候几乎无话不<br>谈，晚上还一起睡觉，但是现在因为我选了<br>一条他看不起的路和他不同，他觉得道不同不相为谋，所以不想在聊系。我想这也没什么毕竟他走他的我走我的。但我想知道什么是真的朋友？？？？？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:76</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as2.jpg);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>颜值在社会中真的是会打破公平的指标吗？</h2>
+                                            <p>今年大二 越来越发现 这个社会太看脸了，<br>同等的能力品德最后还是看颜值，请问如何<br>让自己克服这个障碍，让自己觉得这个世界是公平的，这一直都是我的一个心结。一想到很多工作做不了，婚姻也不会如意，就感觉自己在领悟人生上出现了瓶颈，不能体验到这个世界上最完美的样子。。
+                                            </p>
+                                            <div class="lj_astips"><span>08-22&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:89</span><span
+                                                    class="lj_as2">楼主反馈3</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>【科普】想问心理咨询跟宗教劝人有什么区别呢？</h2>
+                                            <p>心理咨询中很多概念、理论都存在很多争议<br>的！有的甚至被证实是错误的，那我们在接<br>受治疗的过程中，如果被一些错误的观念疗愈了，那跟佛教有什么区别呢？我当初就是百分百相信心理咨询，就是因为相信他是通过科学的方法治愈内心，就像人生病了，是靠打针吃药来治好，而不是靠拜佛，招魂，驱鬼来治好一样！但是，现在心理咨询行业，有的老师用的都是一些科学证实过，是过时的甚至是错误的观点来疗愈我们，而这种疗愈是真的疗愈吗？跟佛教劝人又有何区别呢？万一是用伪科学的手法，或是如佛教般的理论来疗愈咨客，那算真正的疗愈吗？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:80</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>什么是好朋友，我们真的有朋友吗?</h2>
+                                            <p>曾经从小玩到大的朋友，小时候几乎无话不<br>谈，晚上还一起睡觉，但是现在因为我选了<br>一条他看不起的路和他不同，他觉得道不同不相为谋，所以不想在聊系。我想这也没什么毕竟他走他的我走我的。但我想知道什么是真的朋友？？？？？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:76</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as2.jpg);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>颜值在社会中真的是会打破公平的指标吗？</h2>
+                                            <p>今年大二 越来越发现 这个社会太看脸了，<br>同等的能力品德最后还是看颜值，请问如何<br>让自己克服这个障碍，让自己觉得这个世界是公平的，这一直都是我的一个心结。一想到很多工作做不了，婚姻也不会如意，就感觉自己在领悟人生上出现了瓶颈，不能体验到这个世界上最完美的样子。。
+                                            </p>
+                                            <div class="lj_astips"><span>08-22&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:89</span><span
+                                                    class="lj_as2">楼主反馈3</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>【科普】想问心理咨询跟宗教劝人有什么区别呢？</h2>
+                                            <p>心理咨询中很多概念、理论都存在很多争议<br>的！有的甚至被证实是错误的，那我们在接<br>受治疗的过程中，如果被一些错误的观念疗愈了，那跟佛教有什么区别呢？我当初就是百分百相信心理咨询，就是因为相信他是通过科学的方法治愈内心，就像人生病了，是靠打针吃药来治好，而不是靠拜佛，招魂，驱鬼来治好一样！但是，现在心理咨询行业，有的老师用的都是一些科学证实过，是过时的甚至是错误的观点来疗愈我们，而这种疗愈是真的疗愈吗？跟佛教劝人又有何区别呢？万一是用伪科学的手法，或是如佛教般的理论来疗愈咨客，那算真正的疗愈吗？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:80</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>什么是好朋友，我们真的有朋友吗?</h2>
+                                            <p>曾经从小玩到大的朋友，小时候几乎无话不<br>谈，晚上还一起睡觉，但是现在因为我选了<br>一条他看不起的路和他不同，他觉得道不同不相为谋，所以不想在聊系。我想这也没什么毕竟他走他的我走我的。但我想知道什么是真的朋友？？？？？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:76</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as2.jpg);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>颜值在社会中真的是会打破公平的指标吗？</h2>
+                                            <p>今年大二 越来越发现 这个社会太看脸了，<br>同等的能力品德最后还是看颜值，请问如何<br>让自己克服这个障碍，让自己觉得这个世界是公平的，这一直都是我的一个心结。一想到很多工作做不了，婚姻也不会如意，就感觉自己在领悟人生上出现了瓶颈，不能体验到这个世界上最完美的样子。。
+                                            </p>
+                                            <div class="lj_astips"><span>08-22&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:89</span><span
+                                                    class="lj_as2">楼主反馈3</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>【科普】想问心理咨询跟宗教劝人有什么区别呢？</h2>
+                                            <p>心理咨询中很多概念、理论都存在很多争议<br>的！有的甚至被证实是错误的，那我们在接<br>受治疗的过程中，如果被一些错误的观念疗愈了，那跟佛教有什么区别呢？我当初就是百分百相信心理咨询，就是因为相信他是通过科学的方法治愈内心，就像人生病了，是靠打针吃药来治好，而不是靠拜佛，招魂，驱鬼来治好一样！但是，现在心理咨询行业，有的老师用的都是一些科学证实过，是过时的甚至是错误的观点来疗愈我们，而这种疗愈是真的疗愈吗？跟佛教劝人又有何区别呢？万一是用伪科学的手法，或是如佛教般的理论来疗愈咨客，那算真正的疗愈吗？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:80</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as1.png);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>什么是好朋友，我们真的有朋友吗?</h2>
+                                            <p>曾经从小玩到大的朋友，小时候几乎无话不<br>谈，晚上还一起睡觉，但是现在因为我选了<br>一条他看不起的路和他不同，他觉得道不同不相为谋，所以不想在聊系。我想这也没什么毕竟他走他的我走我的。但我想知道什么是真的朋友？？？？？</p>
+                                            <div class="lj_astips"><span>08-23&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:76</span><span
+                                                    class="lj_as2">楼主反馈0</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_esAns">
+                                <div class="lj_answer">
+                                    <a href="javaScript:;">
+                                        <div class="lj_asLeft">
+                                            <div class="lj_asImg" style="background-image: url(../images/lj_as2.jpg);"></div>
+                                        </div>
+                                        <div class="lj_asRight">
+                                            <h2>颜值在社会中真的是会打破公平的指标吗？</h2>
+                                            <p>今年大二 越来越发现 这个社会太看脸了，<br>同等的能力品德最后还是看颜值，请问如何<br>让自己克服这个障碍，让自己觉得这个世界是公平的，这一直都是我的一个心结。一想到很多工作做不了，婚姻也不会如意，就感觉自己在领悟人生上出现了瓶颈，不能体验到这个世界上最完美的样子。。
+                                            </p>
+                                            <div class="lj_astips"><span>08-22&nbsp;·&nbsp;回答:17&nbsp;·&nbsp;有用:89</span><span
+                                                    class="lj_as2">楼主反馈3</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 热门测试 -->
+                    <div class="am-tab-panel am-fade lj_esBox" id="tab2-3">
+                        <ul class="content">
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测你性格最真实的一面</h2>
+                                            <p>面具下的个人才最真实。社会心理<br>学家笑侃每个人的家里都置有一个面具衣柜，以扮演不同的角色，应对不同的需要和责任。所以，当你摘下所有的面具，你的性格呈现哪种特质呢？本题告诉你答案。（图片来源：pixabay）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test1.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1772334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测测你的同性恋潜质</h2>
+                                            <p>你了解自己的性取向吗？来做个<br>性取向测试吧。看看你是不是存在同性恋的潜质而不自知呢？还是更适合与同性来个精神交往？别紧张，多多了解自己其实很重要。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test2.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1643334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测你恋爱时有多投入？</h2>
+                                            <p>当你恋爱了，它会成为你生活中<br>最重要的那件事情吗？你会因为恋爱把其他事情都推延吗？在恋爱过程中，你是全身心的享受吗？（图片来源：stuff-about）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test3.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1567334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测你在别人眼中的模样</h2>
+                                            <p>社会学家米德认为，自我可分为<br>“主我”和“客我”两个部分。自己眼中的自己，与他人眼中的自己往往存在一定的偏差。虽然，我们可以高谈“我只为自己而活”，但米老认为，人格（自我）需在‘主我’与‘客我’不断互动的过程中完整。所以，想知道当下，别人眼中你的样子吗？过来测测吧。（图片来源：unsplash）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test4.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1327334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测最适合自己的工作？</h2>
+                                            <p>命中注定，你是该成为医生还是<br>打字员?在你本能好好去教书的时候，为什么选择了去卖书?做做下面的职业测试，也许能帮你决定该沿着哪一条职业道路前进。（图片来源：ew）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test5.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1237334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测你性格最真实的一面</h2>
+                                            <p>面具下的个人才最真实。社会心理<br>学家笑侃每个人的家里都置有一个面具衣柜，以扮演不同的角色，应对不同的需要和责任。所以，当你摘下所有的面具，你的性格呈现哪种特质呢？本题告诉你答案。（图片来源：pixabay）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test1.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1772334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测测你的同性恋潜质</h2>
+                                            <p>你了解自己的性取向吗？来做个<br>性取向测试吧。看看你是不是存在同性恋的潜质而不自知呢？还是更适合与同性来个精神交往？别紧张，多多了解自己其实很重要。</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test2.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1643334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测你恋爱时有多投入？</h2>
+                                            <p>当你恋爱了，它会成为你生活中<br>最重要的那件事情吗？你会因为恋爱把其他事情都推延吗？在恋爱过程中，你是全身心的享受吗？（图片来源：stuff-about）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test3.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1567334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测你在别人眼中的模样</h2>
+                                            <p>社会学家米德认为，自我可分为<br>“主我”和“客我”两个部分。自己眼中的自己，与他人眼中的自己往往存在一定的偏差。虽然，我们可以高谈“我只为自己而活”，但米老认为，人格（自我）需在‘主我’与‘客我’不断互动的过程中完整。所以，想知道当下，别人眼中你的样子吗？过来测测吧。（图片来源：unsplash）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test4.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1327334已测</span></div>
+                                </div>
+                            </li>
+                            <li class="lj_esCon">
+                                <div class="lj_essence">
+                                    <a href="javaScript:;">
+                                        <div class="lj_esLeft lj_testT">
+                                            <h2 class="lj_h2">测最适合自己的工作？</h2>
+                                            <p>命中注定，你是该成为医生还是<br>打字员?在你本能好好去教书的时候，为什么选择了去卖书?做做下面的职业测试，也许能帮你决定该沿着哪一条职业道路前进。（图片来源：ew）</p>
+                                        </div>
+                                        <div class="lj_esRight" style="background-image: url(../images/lj_test5.jpg);"></div>
+                                    </a>
+                                    <div class="lj_peple"><span class="lj_s1">免费</span><span class="lj_s2">1237334已测</span></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 热播FM -->
+                    <div class="am-tab-panel am-fade lj_fmBox" id="tab2-4">
+                        <ul>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 慢下来，从容地面对世界 </h2>
+                                            <p>主播：若为 <span>7611人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm1.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 余生很贵，请别浪费 </h2>
+                                            <p>主播：安然在1993<span>8965人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm2.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 尺寸不合的爱情，那就不要了吧</h2>
+                                            <p>主播：Nj艾柠<span>11925人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm3.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 舒服的关系，是不必讨好 | 心事博物馆 </h2>
+                                            <p>主播：大宸<span>4913人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm4.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2>我知道你没有男朋友，但是不要着急啊 </h2>
+                                            <p>主播：秋婉<span>14457人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm5.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 慢下来，从容地面对世界 </h2>
+                                            <p>主播：若为 <span>7611人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm1.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 余生很贵，请别浪费 </h2>
+                                            <p>主播：安然在1993<span>8965人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm2.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 尺寸不合的爱情，那就不要了吧</h2>
+                                            <p>主播：Nj艾柠<span>11925人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm3.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 舒服的关系，是不必讨好 | 心事博物馆 </h2>
+                                            <p>主播：大宸<span>4913人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm4.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2>我知道你没有男朋友，但是不要着急啊 </h2>
+                                            <p>主播：秋婉<span>14457人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm5.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 慢下来，从容地面对世界 </h2>
+                                            <p>主播：若为 <span>7611人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm1.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 余生很贵，请别浪费 </h2>
+                                            <p>主播：安然在1993<span>8965人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm2.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 尺寸不合的爱情，那就不要了吧</h2>
+                                            <p>主播：Nj艾柠<span>11925人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm3.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2> 舒服的关系，是不必讨好 | 心事博物馆 </h2>
+                                            <p>主播：大宸<span>4913人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm4.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lj_hotFm">
+                                <div class="lj_fm">
+                                    <a href="javaScript:;">
+                                        <div class="lj_fmLeft">
+                                            <h2>我知道你没有男朋友，但是不要着急啊 </h2>
+                                            <p>主播：秋婉<span>14457人听过</span></p>
+                                        </div>
+                                        <div class="lj_fmRight" style="background-image: url(../images/lj_fm5.jpg);">
+                                            <img src="../images/lj_xin0.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- <div class="lj_esMore"><i class="am-icon-spinner am-icon-spin"></i>&nbsp;&nbsp;加载更多 ···</div> -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="essenceList"></div>
+        </section>
+        <!-- 加载中 -->
+        <div class="lj_esMore load"><i class="am-icon-spinner am-icon-spin"></i>&nbsp;&nbsp;正在加载 ···</div>
+         <!-- 底部 -->
+         <div class="footer">
+            <a href="javascript:;">反馈留言&nbsp;&nbsp;&Iota;</a>
+            <a href="javascript:;">&nbsp;应用下载</a>
+            <p>粤ICP备12051153号m.xinli001.com</p>
+        </div>
+        <!---------- 侧边固定块 -------------->
+        <div class="lj_fixbar" style="display: none;"></div>
+        <div class="lj_fixtan">
+            <div class="lj_fixbox">
+                <a href="lj_hongbao.html" class="lj_fixImg"></a>
+                <span class="am-icon-times-circle lj_close"></span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../js/fastclick.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/iscroll.js"></script>
+    <script src="../js/amazeui.min.js"></script>
+    <script src="../js/loading_animation.js"></script>
+    <script src="../js/lj_index.js"></script>
+</body>
+
+</html>

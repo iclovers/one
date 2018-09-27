@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>登录</title>
+
+    <link rel="stylesheet" href="./../css/amazeui.min.css">
+    <link rel="stylesheet" href="./../css/base.css">
+    <link rel="stylesheet" href="./../css/jigsaw.css">
+    <link rel="stylesheet" href="./../css/zyp-login.css">
+    <script src="./../js/jquery-3.3.1.min.js"></script>
+    <script src="./../js/amazeui.js"></script>
+    <script src="./../js/common.js"></script>
+</head>
+
+<body>
+    <!-- 弹出框 -->
+    <div class="alert_page">
+        <div class="hint">
+            <i class="am-icon-warning"></i>&nbsp;
+            <span class="hint_info"></span>
+        </div>
+        <div class="jigsaw_box">
+            <div id="captcha" style="position: relative;"></div>
+            <div id="msg"></div>
+        </div>
+    </div>
+    <!-- 内容栏 -->
+    <div class="lesson_layout">
+        <div class="login_bg">
+            <a href="./lj_index.html" class="am-icon-btn am-icon-angle-left"></a>
+            <div class="logo">
+                <a href="javascript:;">
+                    <h1>壹心理</h1>
+                </a>
+            </div>
+        </div>
+        <div class="login_page">
+            <div class="am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+                <ul class="am-tabs-nav am-nav am-nav-tabs">
+                    <li class="am-active"><a href="javascript: void(0)">快捷注册·登录</a></li>
+                    <li><a href="javascript: void(0)">账号密码登录</a></li>
+                </ul>
+
+                <div class="am-tabs-bd">
+                    <div class="am-tab-panel am-active">
+                        <form action="">
+                            <div class="ipt_phone_num">
+                                <input type="tel" placeholder="输入手机号" class="phone_num" maxlength=11 minlength=11>
+                                <i class="clear_icon am-icon-times-circle"></i>
+                            </div>
+                            <div class="ipt_validcode">
+                                <input type="tel" placeholder="输入验证码" class="validcode" maxlength=6 minlength=6>
+                                <i class="clear_icon am-icon-times-circle"></i>
+                                <input type="button" value="获取验证码" class="obtain_validcode">
+                            </div>
+                            <div class="agreement_items">
+                                <span class="check_box isChecked">
+                                    <i></i>
+                                </span>
+                                <a href="https://m.xinli001.com/user/agreement">同意《壹心理用户注册协议》</a>
+                            </div>
+                            <input type="submit" value="快捷注册·登录" class="submit_form" disabled>
+                        </form>
+                        <div class="other_method">
+                            <div class="other_md_hd">
+                                <span>其他方式登录</span>
+                            </div>
+                            <div class="other_icon">
+                                <a href="javascript:;"></a>
+                                <a href="javascript:;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="am-tab-panel">
+                        <form action="">
+                            <div class="ipt_phone_num">
+                                <input type="tel" placeholder="输入手机号" class="phone_num phone_num_sec" maxlength=11 minlength=11>
+                                <i class="clear_icon am-icon-times-circle"></i>
+                            </div>
+                            <div class="ipt_password">
+                                <input type="password" placeholder="输入密码" class="psw" maxlength=12>
+                                <i class="clear_icon am-icon-times-circle"></i>
+                            </div>
+                            <div class="agreement_items">
+                                <span class="check_box check_box_sec isChecked">
+                                    <i></i>
+                                </span>
+                                <a href="https://m.xinli001.com/user/agreement">同意《壹心理用户注册协议》</a>
+                            </div>
+                            <input type="submit" value="登录" class="submit_form" disabled>
+                        </form>
+                        <div class="forget_pwd">
+                            <a href="zyp-login.html">忘记密码？</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../js/zyp-login.js"></script>
+</body>
+
+</html>

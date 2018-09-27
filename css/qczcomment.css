@@ -1,0 +1,83 @@
+.commentbox{
+    margin: 0 auto;
+    font-size: 0.4375rem;
+}
+
+.mytextarea {
+    width: 100%;
+    overflow: auto;
+    word-break: break-all;
+    height: 100px;
+    color: #000;
+    font-size: 0.4375rem;
+    resize: none;
+}
+.comment-list{
+    width:100%;
+    margin: .625rem auto;
+    clear: both;
+    padding-top: .625rem;
+    font-size: 0.4375rem;
+}
+.comment-list .comment-info{
+    position: relative;
+    margin-bottom: .625rem;
+    margin-bottom: .625rem;
+    border-bottom: 1px solid #ccc;
+}
+.comment-list .comment-info header{
+    width: 10%;
+    position: absolute;
+}
+.comment-list .comment-info header img{
+    width: 1.125rem;
+    border-radius: 50%;
+    padding: 5px;
+}
+.comment-list .comment-info .comment-right{
+    padding:5px 0px 5px 11%;
+}
+.comment-list .comment-info .comment-right h3{
+    margin: 5px .375rem;
+}
+.comment-list .comment-info .comment-right .comment-content-header{
+    height: 25px;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,.comment-list .comment-info .comment-right .comment-content-footer span{
+    font-size: .3125rem;
+    color: #aaa;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,.comment-list .comment-info .comment-right .comment-content-footer span.reply-btn,.send,.reply-list-btn{
+    cursor: pointer;
+}
+.comment-list .comment-info .comment-right .reply-list {
+    border-left: 3px solid #ccc;
+    padding-left: 7px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply{
+    border-bottom: 1px dashed #ccc;
+}
+.comment-list .comment-info .comment-right .reply-list .reply div span{
+    padding-left: 10px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply p span{
+    font-size: .3125rem;
+    color: #aaa;
+}
+.content{
+    margin: 0 !important;
+}
+.col-md-10{
+    display: inline-block;
+    width: 80%;
+}
+.col-md-2{
+    display: inline-block;
+    width: 20%;
+}
+.reply-list p{
+    margin: 0 !important;
+}
+#comment{
+    font-size: .4375rem;
+}

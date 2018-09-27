@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>壹心理咨询</title>
+    <!-- 引用amazeui的css -->
+    <link rel="stylesheet" href="../css/amazeui.min.css">
+    <!-- 引用基本的css -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引用首页自己的css-->
+    <link rel="stylesheet" href="../css/nml-test.css">
+    <!-- 引用swiper的css -->
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!-- 引用jQuery的JS -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- 引用amazeui的js -->
+    <script src="../js/amazeui.js"></script>
+    
+    <!-- 引用swiper的css -->
+    <script src="../js/swiper.jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <!-- iscroll的js -->
+    <script src="../js/iscroll.js"></script>
+    <!-- 引用公共的JS -->
+    <script src="../js/common.js"></script>
+   
+    
+</head>
+
+<body>
+    <div class="c_layout">
+        <!-- 头部块 -->
+        <div class="c_header">
+            <a  class="title fl" href="lj_index.html"><h2>壹心理咨询</h2></a>
+            <div class="sub_title fl">让改变发生</div>  
+            <a href="zyp-login.html"><span class="order fr">我的订单</span></a>
+        </div>
+        <!-- 轮播图 -->
+        <div class="swiper-container c_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../images/nml-banner1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../images/nml-banner2.png" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../images/nml-banner3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../images/nml-banner4.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination c_indicator"></div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="c_nav">
+            <ul class="c_nav_ul clear">
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_marry"></i>
+                        <p>婚姻家庭</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_grown"></i>
+                        <p>个人成长</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_love"></i>
+                        <p>恋爱心理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_mood"></i>
+                        <p>情绪管理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_psycology"></i>
+                        <p>心理健康</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_relationship"></i>
+                        <p>人际关系</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_job"></i>
+                        <p>职场心理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_parent"></i>
+                        <p>亲子教育</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_sex"></i>
+                        <p>性心理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="c_nav_icon c_nav_icon_speak"></i>
+                        <p>及时倾诉</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="c_nav_dots">
+            <ul>
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- 测试块 -->
+        <div class="c_test">
+            <a href="javascript:;">
+                <img src="../images/nml-intoduce.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="../images/nml-test.png" alt="">
+            </a>
+        </div>
+        <!-- 热门块 -->
+        <div class="c_hot">
+            <div class="c_title">
+                <h3 class="fl">热门话题</h3>
+                <div class="fr">更多&gt;</div>
+            </div>
+            <div class="c_hot-Content clear">
+                <div class="c_hot_detail">
+                    <a href="javascript:;" class="fl">
+                        <img src="../images/nml-hot3.jpg" alt="">
+                    </a>
+                    <div class="right fr">
+                        <p class="title">
+                            <button class="am-btn am-btn-primary doc-oc-js c_hot_btn" data-rel="open">无处安放的伤痛，如何面对和疗愈</button>
+                        </p>
+                        <!-- 增加一个文章页面 -->
+                        <!-- 详情侧边栏 -->
+                        <div id="my-offcanvas" class="am-offcanvas">
+                            <div class="am-offcanvas-bar article-mask">
+                                <div class="am-offcanvas-content">
+                                    <h3>无处安放的伤痛，如何面对和疗愈？</h3>
+                                    <!-- 增加一个文章页面 -->
+                                    <h4>话题简介</h4>
+                                    <p class="introduce">
+                                        人的一生中总会出现大大小小的创伤，
+                                        原生家庭的阴影、亲朋好友的离去、父母的争吵与离婚、亲密关系的欺骗和背叛、职场的压力、亲子间的不良沟通。。。
+                                        这些无处不在的创伤，让内心存着无处安放的伤痛，让人绝望，让人无助，让人找不到出口。
+                                        很多人会问：
+                                        “为什么是我？
+                                        我该怎么办呢？
+                                        我怎么样才能改变呢？
+                                        我怎么才能更好地面对接下来的人生呢？”
+                                    </p>
+                                    <h4>咨询内容</h4>
+                                    <p class="price">                         
+                                        我在美国高校接受过6年的专业心理咨询训练，硕士专攻家庭与婚姻治疗和创伤治疗，在这几年的心理咨询实践中，平均每周接待超过20小时的个案，有一半的个案是家庭与伴侣咨询，帮助了很多个人、伴侣和家庭从无助中走出来，从失望中看到光明，从支离破碎的关系慢慢成长并修复关系。我始终用专业、温和、不批判的态度去陪伴来访者，一起面对迷茫和痛苦并且逐步成长。
+                                        我会帮助你明确和清晰知道自己想要的是什么。我会陪着你探索，哪些是阻碍你的困难，我们一起面对和解决问题。我会陪着你找到自己的内在的力量和自信，看到自己的资源，并且能整合自己的资源。在咨询的旅途中，你还会感到心中的平静和希望，改变混乱和不安的现状。你最后还会知道，如何通过自我的力量和资源去独自面对未来的问题。
+                                    </p>
+                                    <p class="visitor" id="more_info">
+                                        了解更多
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="introduce">李敏楠&nbsp;·&nbsp;美国雪城大学婚姻与家庭治疗硕士</p>
+                        <p class="price">
+                            &yen;<span>300.00</span>/次
+                        </p>
+                        <p class="visitor">
+                            小于<span>50</span>人咨询过
+                        </p>
+                    </div>
+                </div>
+                <div class="c_hot_detail">
+                    <a href="javascript:;" class="fl">
+                        <img src="../images/nml-hot2.jpg" alt="">
+                    </a>
+                    <div class="right fr">
+                        <p class="title">不善交际，该怎么改变？</p>
+                        <p class="introduce">罗雯丽&nbsp;·&nbsp;心理治疗本硕，博在读，欧盟执业心理咨询师</p>
+                        <p class="price">
+                            &yen;<span>500.00</span>/次
+                        </p>
+                        <p class="visitor">
+                            小于<span>708</span>人咨询过
+                        </p>
+                    </div>
+                </div>
+                <div class="c_hot_detail">
+                    <a href="javascript:;" class="fl">
+                        <img src="../images/nml-hot1.jpg" alt="">
+                    </a>
+                    <div class="right fr">
+                        <p class="title">人际关系，想说爱你不容易</p>
+                        <p class="introduce">岳菲&nbsp;·&nbsp;美国心理咨询硕士/国家二级心理咨询师</p>
+                        <p class="price">
+                            &yen;<span>600.00</span>/次
+                        </p>
+                        <p class="visitor">
+                            小于<span>71</span>人咨询过
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c_mail">
+            <a href="javascript:;">
+                <img src="../images/nml-middle.png" alt="">
+            </a>
+        </div>
+        <!-- 推荐块 -->
+        <div class="c_recommend">
+            <div class="c_title">
+                <h3 class="fl">推荐咨询师</h3>
+                <div class="fr">更多&gt;</div>
+            </div>
+            <div class="c_R_content">
+                <div class="c_hot_detail">
+                    <a href="javascript:;" class="fl">
+                        <img src="../images/nml-recommand4.png" alt="">
+                    </a>
+                    <div class="right fr">
+                        <div class="name">梁娟</div>
+                        <div class="introduce">北大临床心理学研究生，二级心理咨询师</div>
+                        <div class="specialist">
+                            <span>性格完善</span>
+                            <span>依恋问题</span>
+                            <span>安全感</span>
+                            <span>社会适应</span>
+                        </div>
+                        <p class="price">&yen;<span>400</span></p>
+                    </div>
+                </div>
+                <div class="c_hot_detail">
+                    <a href="javascript:;" class="fl">
+                        <img src="../images/nml-recommand22.png" alt="">
+                    </a>
+                    <div class="right fr">
+                        <div class="name">
+                            <span class="sec_name">刘彦佐</span>
+                            <i></i>
+                            <span>从业<span class="work">5</span>年</span>
+                        </div>
+                        <div class="introduce">美国催眠师/台湾心理师/硕士/企业讲师</div>
+                        <div class="specialist">
+                            <span>婚姻焦虑</span>
+                            <span>第三者</span>
+                            <span>家庭冲突</span>
+                            <span>脱单攻略</span>
+                        </div>
+                        <p class="price">&yen;<span>450-500</span></p>
+                    </div>
+                </div>
+                <div class="c_hot_detail">
+                    <a href="javascript:;" class="fl">
+                        <img src="../images/nml-recommand8.png" alt="">
+                    </a>
+                    <div class="right fr">
+                        <div class="name">
+                            <span class="th_name">刘月鹏</span>
+                            <i></i>
+                            <span>从业<span class="work">4</span>年</span>
+                        </div>
+                        <div class="introduce">二级咨询师、中国心理学会会员、婚姻师</div>
+                        <div class="specialist">
+                            <span>婚外情</span>
+                            <span>夫妻沟通</span>
+                            <span>产后抑郁</span>
+                            <span>家庭创伤</span>
+                        </div>
+                        <p class="price">&yen;<span>350-600</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="c_change">
+                <a>
+                    <i class="am-icon-refresh am-icon-spin"></i>
+                    <span>换一换</span>
+                </a>
+            </div>
+        </div>
+        <!-- 动态块 -->
+        <div class="c_messages">
+            <div class="c_image">
+                <div class="c_attitude">
+                    <i class="am-icon-commenting-o"></i>
+                    <span>动态</span>
+                </div>
+                <div class="c_messages_update">
+                    <div class="box-wrapper">
+                        <p class="c_reserve ">
+                            黄**预约了
+                            <a href="javascript:;">孟秀莲</a>
+                            老师1次&nbsp;￥500.00&nbsp;视频咨询
+                        </p>
+                        <p class="c_reserve">
+                            刘**预约了
+                            <a href="javascript:;">萧玉洁</a>
+                            老师1次&nbsp;￥500.00&nbsp;视频咨询
+                        </p>
+                        <p class="c_reserve">
+                            白**预约了
+                            <a href="javascript:;">文洁</a>
+                            老师1次&nbsp;￥500.00&nbsp;视频咨询
+                        </p>
+                        <p class="c_reserve ">
+                            黄**预约了
+                            <a href="javascript:;">孟秀莲</a>
+                            老师1次&nbsp;￥500.00&nbsp;视频咨询
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最佳板块 -->
+        <div class="c_bester">
+            <div class="c_title">
+                <h3 class="fl">最佳人气</h3>
+                <div class="fr">更多&gt;</div>
+            </div>
+            <div class="c_bester_content">
+                <div class="c_bester_box">
+                    <div class="c_bester_lists clear">
+                        <div class="top">
+                            <a href="javascript:;" style="background-image:url(../images/nml-recommand5.png)">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>顾曦</h3>
+                                <p>情感专家，中科院心理健康指导师</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>婚姻家庭</span>
+                            <span>性心理</span>
+                            <span>恋爱心理</span>
+                        </div>
+                    </div>
+                    <div class="c_bester_lists clear">
+                        <div class="top">
+                            <a href="javascript:;" style="background-image:url(../images/nml-recommand15.png)">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>文洁</h3>
+                                <p>美国BC咨询心理学硕士 叙事治疗师</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>婚姻家庭</span>
+                            <span>情绪心理</span>
+                            <span>职场心理</span>
+                        </div>
+                    </div>
+                    <div class="c_bester_lists clear">
+                        <div class="top">
+                            <a href="javascript:;" style="background-image:url(../images/nml-recommand13.png)">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>刘然</h3>
+                                <p>美国宾大心理学硕士 国家二级心理咨询师</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>婚姻家庭</span>
+                            <span>恋爱心理</span>
+                        </div>
+                    </div>
+                    <div class="c_bester_lists clear">
+                        <div class="top">
+                            <a href="javascript:;" style="background-image:url(../images/nml-recommand9.png)">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>肖碧玉</h3>
+                                <p>IHNMA催眠治疗师 完形治疗师 中英班</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>婚姻家庭</span>
+                            <span>职场心理</span>
+                        </div>
+                    </div>
+                    <div class="c_bester_lists clear">
+                        <div class="top">
+                            <a href="javascript:;" style="background-image:url(../images/nml-recommand2.png)">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>余英健</h3>
+                                <p>精神分析与人本聚焦治疗师，婚姻家庭治疗师</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>婚姻家庭</span>
+                            <span>心理健康</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- 最新入住 -->
+        <div class="c_bester c_new_live">
+            <div class="c_title">
+                <h3 class="fl">最新入住</h3>
+                <div class="fr">更多&gt;</div>
+            </div>
+            <!-- 预约框 -->
+            <div class="am-modal-actions reserve_part" id="my-actions">
+                <div class="am-modal-actions-group reserve_progress">
+                    <div class="reserve_title">
+                        <h4 class="am-popup-title">预约老师须知</h4>
+                    </div>
+                    <div class="reserve_content">
+                        <h4>回应时长</h4>
+                        <p>我将在收到订单后/6小时内回复是否接受咨询，且在6小时内通过私信/电话与来访者协商咨询时间、地点</p>
+                        <h4>可预约时段</h4>
+                        <p>语音视频咨询可以随时约，面询地点为南京镇江两地，需要至少提前24小时确定时间地点</p>
+                        <h4>若变更预约</h4>
+                        <p>若因为不可抗力需要变更/取消已协商好的咨询预约，请务必提前24小时（两个工作日）联络我。否则咨询将如期开始。</p>
+                        <h4>爽约/迟到</h4>
+                        <p>若没有提前24小时告知情况，爽约/迟到20分钟以上，则默认这次咨询已经完成。其他特殊情况，需与我协商处理。</p>
+                    </div>
+                </div>
+                <div class="am-modal-actions-group  reserve_agree">
+                    <button class="am-btn am-btn-secondary am-btn-block reserve_agree_btn" data-am-modal-close>确定</button>
+                </div>
+            </div>
+            <div class="c_newers_content">
+                <div class="c_newrs_lists">
+                    <div class="c_newers clear">
+                        <div class="top clear">
+                            <a href="javascript:;">
+                                <img src="../images/nml-recommand18.jpg" alt="">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>汤锦燕</h3>
+                                <button type="button" class="am-btn am-btn-secondary c_reserve" data-am-modal="{target: '#my-actions'}">预约</button>
+                                <p>国家二级心理咨询师，心理学学士</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>亲子教育</span>
+                            <span>情绪管理</span>
+                        </div>
+                    </div>
+                    <div class="c_newers clear">
+                        <div class="top clear">
+                            <a href="javascript:;">
+                                <img src="../images/nml-recommand10.png" alt="">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>梁田</h3>
+                                <button type="button" class="am-btn am-btn-secondary c_reserve" data-am-modal="{target: '#my-actions'}">预约</button>
+                                <p>留法硕士/二级心理咨询师/燕园心理督导师</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>婚姻家庭</span>
+                            <span>情绪管理</span>
+                        </div>
+                    </div>
+                    <div class="c_newers clear">
+                        <div class="top clear">
+                            <a href="javascript:;">
+                                <img src="../images/nml-recommand17.png" alt="">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>刘丹红</h3>
+                                <button type="button" class="am-btn am-btn-secondary c_reserve" data-am-modal="{target: '#my-actions'}">预约</button>
+                                <p>心理分析硕士、国家二级心理咨询师</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>婚姻家庭</span>
+                            <span>恋爱心理</span>
+                        </div>
+                    </div>
+                    <div class="c_newers clear">
+                        <div class="top clear">
+                            <a href="javascript:;">
+                                <img src="../images/nml-recommand12.png" alt="">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>浮慧慧</h3>
+                                <button type="button" class="am-btn am-btn-secondary c_reserve" data-am-modal="{target: '#my-actions'}">预约</button>
+                                <p>国家二级心理咨询师，中国心理学会会员</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>婚姻家庭</span>
+                            <span>亲自教育</span>
+                        </div>
+                    </div>
+                    <div class="c_newers clear">
+                        <div class="top clear">
+                            <a href="javascript:;">
+                                <img src="../images/nml-recommand11.png" alt="">
+                            </a>
+                            <div class="c_bester_info">
+                                <h3>黄民燕</h3>
+                                <button type="button" class="am-btn am-btn-secondary c_reserve" data-am-modal="{target: '#my-actions'}">预约</button>
+                                <p>二级心理咨询师</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <span>擅长：</span>
+                            <span>个人成长</span>
+                            <span>婚姻家庭</span>
+                            <span>亲自教育</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部助手块 -->
+        <div class="c_assitant">
+            <div class="c_title">
+                <h3 class="fl">小助手精选</h3>
+            </div>
+            <div class="content">
+                <a href="javascript:;">
+                    <img src="../images/nml-footer1.jpg" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="../images/nml-footer2.jpg" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="../images/nml-footer3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="../images/nml-bottom.jpg" alt="">
+        </div>
+    </div>
+    <!-- 引用首页自己的JS -->
+    <script src="../js/nml-test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+body {
+  font-size: 0.25rem;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  border-bottom: 0.01rem solid #eee;
+  text-align: center;
+}
+.header .am-g {
+  height: 100%;
+  line-height: 1rem;
+}
+.header .am-g .return,
+.header .am-g .home,
+.header .am-g .menu {
+  color: #626060;
+}
+.header .am-g .return {
+  float: left;
+  padding-left: 0.15rem;
+}
+.header .am-g .home {
+  float: right;
+}
+.header .am-g h3 {
+  margin: 0%;
+  font-weight: normal;
+  text-align: center;
+}
+.header .am-g .am-u-sm-2,
+.header .am-g .am-u-sm-8 {
+  padding: 0;
+}
+.content {
+  height: 100%;
+  padding-top: 1rem;
+}
+.content .aside-left {
+  float: left;
+  width: 1.2rem;
+  height: 100%;
+  overflow: hidden;
+  background-color: #eee;
+}
+.content .aside-left > ul {
+  width: 100%;
+  padding: 0;
+  font-size: 0.2rem;
+}
+.content .aside-left > ul > li {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+.content .aside-left > ul > li.active {
+  font-weight: 700;
+  box-sizing: border-box;
+  border-right: 1px solid #eee;
+  background-color: #fff;
+}
+.content .aside-left > ul > li.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.12rem;
+  height: 1rem;
+  background-image: linear-gradient(to bottom, #fff056 0, #ffdd2b);
+}
+.content .aside-right {
+  position: relative;
+  margin-left: 1.2rem;
+  height: 100%;
+  overflow: hidden;
+}
+.content .aside-right > .sort {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0 0.3rem;
+  font-size: 0.26rem;
+  color: #333;
+  border-bottom: 0.01rem solid #eee;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.content .aside-right > .sort > .btn {
+  line-height: 0.9rem;
+  border: none;
+  background: #fff;
+}
+.content .aside-right > .sort > .btn > .sort-con {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  line-height: normal;
+  text-align: center;
+  background: #fff;
+  z-index: 2;
+}
+.content .aside-right > .sort > .btn > .sort-con > li {
+  width: 100%;
+  line-height: 0.8rem;
+  border-bottom: 0.01rem solid #eee;
+}
+.content .aside-right > .mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.15;
+  display: none;
+  z-index: 1;
+}
+.content .aside-right > .right-con {
+  height: 100%;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+.content .aside-right > .right-con > ul {
+  width: 100%;
+  margin: 0;
+  padding: 0 0.3rem;
+}
+.content .aside-right > .right-con > ul h3,
+.content .aside-right > .right-con > ul p {
+  margin: 0;
+}
+.content .aside-right > .right-con > ul > li {
+  width: 100%;
+  height: 1.9rem;
+  padding: 0.25rem 0 0.25rem ;
+  border-bottom: 0.01rem solid #eee;
+}
+.content .aside-right > .right-con > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content .aside-right > .right-con > ul > li > a > .left {
+  float: left;
+  width: 64%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .aside-right > .right-con > ul > li > a > .left > h3 {
+  font-size: 0.26rem;
+}
+.content .aside-right > .right-con > ul > li > a > .left > p {
+  font-size: 0.19rem;
+  color: #bbb;
+}
+.content .aside-right > .right-con > ul > li > a > .left > .l-foot {
+  margin-top: 0.4rem;
+  font-size: 0.19rem;
+  color: #bbb;
+}
+.content .aside-right > .right-con > ul > li > a > .left > .l-foot > .red {
+  float: left;
+  font-size: 0.2rem;
+  color: red;
+}
+.content .aside-right > .right-con > ul > li > a > .left > .l-foot > .deleting {
+  text-decoration: line-through;
+}
+.content .aside-right > .right-con > ul > li > a > .left > .l-foot > span:nth-of-type(3) {
+  float: right;
+}
+.content .aside-right > .right-con > ul > li > a > .right {
+  float: right;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.content .aside-right > .right-con > ul > li > a > .right > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.1rem;
+}

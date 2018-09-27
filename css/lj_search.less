@@ -1,0 +1,115 @@
+body{
+    font-size: 12/50rem !important;
+    
+}
+p,h1,h4{
+    margin-bottom: 0 !important;
+}
+h6,h2,p,h1{
+    margin-top: 0 !important;
+}
+ul{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.lj_sHeader {
+    width: 6.4rem;
+    height: 0.88rem;
+    background-color: #118bd0;
+    color: #fff;
+    z-index: 10;
+    >a{
+        display: inline-block;
+        width: 0.88rem;
+        line-height: 0.88rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-align: center;
+        i::before{
+            content: "\f104";
+            font-size: 24/50rem;
+            color: #fff;
+            line-height: 0.88rem;
+        }
+    }
+    >h1{
+        font-size: 0.34rem;
+        line-height: 0.88rem;
+        text-align: center;
+        // padding-left: 0.88rem;
+    }
+}
+.lj_sNav {
+    width: 6.4rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    padding: 0.3rem 0;
+    position: relative;
+    >.lj_sSearch {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        line-height: 0.88rem;
+        padding: 0 0.26rem;;
+        left: 0;
+        >i::before{
+            content: "\f002";
+            position: absolute;
+            left:25/50rem;
+            top: 10/50rem;
+            font-size: 15/50rem;
+        }
+        >input{
+            width: 241/50rem;
+            height: 35/50rem;
+            line-height: 35/50rem;
+            border: none;
+            background-color: #f3f4f5;
+            border-radius: 0.1rem;
+            padding-left: 0.6rem;
+        }
+        >span{
+            height: 0.5rem;
+            line-height: 0.54rem;
+            margin-left: 0.3rem;
+            font-size: 15/50rem;
+        }
+    }
+    >.lj_sCon {
+        position: absolute;
+        top:  0.80rem;
+        left: 0;
+        padding: 0.2rem 0.26rem;
+        >h4{
+            color: #333;
+            font-size: 0.28rem;
+            color: #333;
+        }
+        >ul{
+            overflow: hidden;
+            >li{
+                float: left;
+                margin-right:  0.2rem;
+                margin-bottom: 0.2rem;
+                padding: 0 0.3rem;
+                font-size: 0.24rem;
+                background: #eee;
+                color: #666;
+            }
+        }
+    }
+}
+.lj_seT{
+    position: fixed;
+    top: 200/50rem;
+    left: 80/50rem;
+    display: inline-block;
+    padding: 10/50rem 20/50rem;
+    border-radius: 20/50rem;
+    background-color: rgba(0,0,0,.69);
+    font-size: 16/50rem;
+    color: #fff;
+    z-index: 2000;
+    display: none;
+}

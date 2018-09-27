@@ -1,0 +1,174 @@
+.lesson_layout {
+  width: 0;
+  overflow: hidden;
+  font-size: 0.26rem;
+  background-color: #eee;
+}
+.lesson_layout .am-gotop {
+  border-radius: 50%;
+}
+.lesson_layout .am-gotop i {
+  background-color: rgba(11, 139, 255, 0.6);
+}
+.lesson_layout .am-header {
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+.lesson_layout .am-header .am-header-icon {
+  font-size: 0.5rem;
+}
+.lesson_layout .am-header .am-header-title {
+  font-size: 0.32rem;
+}
+.lesson_layout .am-header .login_link img {
+  height: 0.52rem;
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  top: 0.14rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lesson_layout .am-header .login_link .active {
+  display: none;
+}
+.lesson_layout .tab_box {
+  padding-top: 0.8rem;
+  position: relative;
+}
+.lesson_layout .tab_box .tab_nav {
+  position: relative;
+}
+.lesson_layout .tab_box .tab_nav > ul {
+  box-shadow: 0 0.1rem 0.1rem #ccc;
+  position: absolute;
+  height: 0.8ren;
+  width: 11.2rem;
+  top: -0.8rem;
+  left: 0;
+  background-color: #fff;
+}
+.lesson_layout .tab_box .tab_nav > ul > li {
+  float: left;
+  width: 1.6rem;
+  height: 0.8ren;
+  line-height: 0.8rem;
+  text-align: center;
+}
+.lesson_layout .tab_box .tab_nav > ul > li a {
+  position: relative;
+  display: block;
+  height: 0.8ren;
+  line-height: 0.8rem;
+  color: #333;
+}
+.lesson_layout .tab_box .tab_nav > ul > li.active a {
+  color: #0b8bff;
+}
+.lesson_layout .tab_box .tab_nav > ul > li.active a::before {
+  content: "";
+  position: absolute;
+  width: 1.3rem;
+  height: 0.08rem;
+  background-color: #0b8bff;
+  border-radius: 0.04rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lesson_layout .tab_box .tab_bd a:visited,
+.lesson_layout .tab_box .tab_bd a:focus {
+  color: #333;
+}
+.lesson_layout .tab_box .tab_bd > ul > li {
+  display: none;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li {
+  background-color: #fff;
+  margin-top: 0.1rem;
+  height: 2.36rem;
+  width: 6.4rem;
+  padding: 0.2rem;
+  box-shadow: 0 0.04rem 0.04rem #ccc;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a .lesson_c_left {
+  position: relative;
+  width: 3rem;
+  height: 1.9rem;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a .lesson_c_left h2 {
+  width: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.36rem;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a .lesson_c_left .price_old {
+  position: absolute;
+  font-size: 0.2rem;
+  left: 0;
+  bottom: 0.36rem;
+  color: #bbb;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a .lesson_c_left .lesson_price {
+  position: absolute;
+  color: #f00;
+  font-size: 0.2rem;
+  bottom: 0;
+  left: 0;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a .lesson_c_left .peopleIn {
+  position: absolute;
+  font-size: 0.2rem;
+  color: #333;
+  bottom: 0;
+  right: 0;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a .right_pic {
+  padding-top: 0.2rem;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box li a .right_pic img {
+  width: 2.8rem;
+}
+.lesson_layout .tab_box .tab_bd > ul > li .class_lesson_box .display_all {
+  background-color: #eee;
+  height: 1rem;
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1rem;
+  color: #999;
+}
+.lesson_layout .tab_box .tab_bd > ul > li.active {
+  display: block;
+}
+.load_animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+.load_animation .load_icon {
+  position: absolute;
+  width: 1.54rem;
+  height: 1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../images/zyp-load-pic.png') no-repeat left 0.02rem;
+  background-size: 1.54rem 25.68rem;
+}

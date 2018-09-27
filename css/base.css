@@ -1,0 +1,82 @@
+
+html,body,div,form,p,span,a,ul,li,ol,dl,dd,dt,input,img,b,ins,strong,i,em,h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+a:visited,
+a:hover,
+a:focus,
+a:active{
+    text-decoration: none;
+    color: #0b8bff;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    display: block;
+}
+
+input,
+button,
+textarea,
+select{
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    -webkit-input-placeholder-color: #999 !important;
+}
+
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+
+body.fixInput{
+  position: fixed;
+  width: pxToRem(640);
+  left: 50%;
+  margin-left: pxToRem(-640/2);
+  height: 100%;
+  overflow: hidden;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 26/50rem;
+    color: #333;
+}
+
+button {
+	cursor: pointer;
+	padding: 0;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clear::before,
+.clear::after {
+    content: "";
+    display:block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}

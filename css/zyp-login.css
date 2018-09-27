@@ -1,0 +1,306 @@
+.alert_page {
+  display: none;
+  position: fixed;
+  font-size: 0.32rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+.alert_page .hint {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 3.7rem;
+  height: 1rem;
+  left: 50%;
+  top: 3.6rem;
+  transform: translateX(-50%);
+  border-radius: 0.1rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.alert_page .hint i {
+  color: #f00;
+}
+.alert_page .jigsaw_box {
+  display: none;
+  position: absolute;
+  width: 6.4rem;
+  height: 3.6rem;
+  top: 2.86rem;
+  background-color: #fff;
+}
+.alert_page .jigsaw_box div#msg {
+  display: none;
+  text-align: center;
+  line-height: 1.12rem;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 0.44rem;
+  font-weight: 700;
+}
+.lesson_layout {
+  width: 100%;
+  height: 100%;
+  font-size: 0.28rem;
+}
+.lesson_layout .login_bg {
+  position: absolute;
+  width: 6.4rem;
+  height: 2.4rem;
+  background: url('../images/zyp-login-bg.png') no-repeat left top;
+  background-size: cover;
+}
+.lesson_layout .login_bg .am-icon-btn {
+  background-color: transparent;
+  position: absolute;
+  width: 0.76rem;
+  height: 0.76rem;
+  line-height: 0.64rem;
+  font-size: 0.52rem;
+  top: 0;
+  left: 0;
+  color: rgba(11, 139, 255, 0.8);
+}
+.lesson_layout .login_bg .logo {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lesson_layout .login_bg .logo a {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0;
+  background: url('../images/lj_app.png') no-repeat;
+  background-size: contain;
+}
+.lesson_layout .login_page {
+  height: 100%;
+  padding-top: 2.6rem;
+  overflow: hidden;
+}
+.lesson_layout .login_page .am-tabs .am-tabs-nav {
+  border: none;
+}
+.lesson_layout .login_page .am-tabs .am-tabs-nav li {
+  margin: 0;
+}
+.lesson_layout .login_page .am-tabs .am-tabs-nav li a {
+  width: 3.2rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  line-height: 0.8rem;
+  position: relative;
+  color: #ccc;
+}
+.lesson_layout .login_page .am-tabs .am-tabs-nav li.am-active a {
+  color: #0b8bff;
+}
+.lesson_layout .login_page .am-tabs .am-tabs-nav li.am-active a::before {
+  content: '';
+  position: absolute;
+  width: 2.4rem;
+  height: 0.06rem;
+  border-radius: 0.03rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0b8bff;
+}
+.lesson_layout .login_page .am-tabs-bd {
+  border: none;
+  padding-top: 0.2rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel {
+  padding: 0.2rem 0.4rem 0;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_phone_num {
+  border-bottom: 0.02rem solid #ccc;
+  height: 1rem;
+  position: relative;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_phone_num .phone_num {
+  width: 100%;
+  border: none;
+  font-size: 0.2rem;
+  padding: 0.46rem 0 0.2rem;
+  font-weight: 700;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_phone_num .clear_icon {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  right: 0.2rem;
+  top: 0.4rem;
+  color: #999;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_password {
+  border-bottom: 0.02rem solid #ccc;
+  height: 1rem;
+  position: relative;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_password .psw {
+  width: 100%;
+  border: none;
+  font-size: 0.2rem;
+  padding: 0.46rem 0 0.2rem;
+  font-weight: 700;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_password .clear_icon {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  right: 0.2rem;
+  top: 0.4rem;
+  color: #999;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_validcode {
+  border-bottom: 0.02rem solid #ccc;
+  height: 1rem;
+  position: relative;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_validcode .validcode {
+  width: 3.4rem;
+  border: none;
+  font-size: 0.2rem;
+  padding: 0.46rem 0 0.2rem;
+  font-weight: 700;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_validcode .clear_icon {
+  display: none;
+  position: absolute;
+  z-index: 11;
+  left: 3rem;
+  top: 0.4rem;
+  color: #999;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_validcode .obtain_validcode {
+  width: 2.1rem;
+  border: none;
+  font-size: 0.2rem;
+  padding: 0.46rem 0 0.2rem;
+  background-color: transparent;
+  color: #0b8bff;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .ipt_validcode::before {
+  content: "";
+  position: absolute;
+  width: 0.02rem;
+  height: 0.4rem;
+  left: 3.46rem;
+  bottom: 0.16rem;
+  background-color: #ccc;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .agreement_items {
+  height: 1rem;
+  line-height: 1rem;
+  position: relative;
+  padding-left: 0.4rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .agreement_items .check_box {
+  position: absolute;
+  height: 0.62rem;
+  width: 0.42rem;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-47%);
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .agreement_items .check_box i {
+  display: block;
+  height: 0.22rem;
+  width: 0.22rem;
+  border: 0.02rem solid #333;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .agreement_items .check_box.isChecked i {
+  background: url('../images/zyp-checked.png');
+  background-size: contain;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .agreement_items a {
+  font-size: 0.2rem;
+  color: #333;
+  text-decoration: underline;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .submit_form {
+  width: 100%;
+  height: 0.8rem;
+  background: #aed5ff;
+  color: #fff;
+  border: none;
+  border-radius: 0.04rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method {
+  padding-top: 0.6rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method .other_md_hd {
+  position: relative;
+  height: 0.6rem;
+  text-align: center;
+  font-size: 0.2rem;
+  line-height: 0.6rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method .other_md_hd span {
+  position: absolute;
+  height: 0.6rem;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 0 0.2rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method .other_md_hd::before {
+  content: "";
+  position: absolute;
+  width: 4.6rem;
+  height: 0;
+  border-bottom: 0.02rem solid #ccc;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method .other_icon {
+  position: relative;
+  height: 0.7rem;
+  margin-top: 0.4rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method .other_icon a {
+  display: block;
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  top: 0;
+  background-color: #f00;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method .other_icon a:first-of-type {
+  background: url('../images/zyp-weibo.png');
+  background-size: 0.7rem 0.7rem;
+  margin-left: -1rem;
+  left: 50%;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .other_method .other_icon a:last-of-type {
+  background: url('../images/zyp-qq.png');
+  background-size: 0.7rem 0.7rem;
+  margin-right: -1rem;
+  right: 50%;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .forget_pwd {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.2rem;
+}
+.lesson_layout .login_page .am-tabs-bd .am-tab-panel .forget_pwd a {
+  display: inline-block;
+  height: 0.6rem;
+  color: #aaa;
+}

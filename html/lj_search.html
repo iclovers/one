@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>搜索块</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/lj_search.css">
+    <link rel="stylesheet" href="../css/amazeui.min.css">
+</head>
+<body>
+    <header class="lj_sHeader">
+        <a href="lj_index.html" class="lj_back"><i class="am-icon-angle-left"></i></a>
+        <h1>搜索</h1>
+    </header>
+    <nav class="lj_sNav">
+        <div class="lj_sSearch">
+            <i class="am-icon-search"></i>
+            <input type="text" placeholder="请输入搜索词">
+            <span class="lj_sbt">搜索</span>
+        </div>
+        <div class="lj_sCon">
+            <h4>热门搜索词</h4>
+            <ul>
+                <li>抑郁</li>
+                <li>同性恋</li>
+                <li>恋爱</li>
+                <li>原生家庭</li>
+                <li>做计划</li>
+                <li>性心理</li>
+                <li>李银河</li>
+                <li>情商</li>
+                <li>完美主义</li>
+                <li>人格</li>
+                <li>孤独</li>
+                <li>同性恋</li>
+                <li>心事博物馆</li>
+                <li>冥想</li>
+                <li>出轨</li>
+                <li>父母</li>
+                <li>习得性无助</li>
+                <li>攻击</li>
+                <li>书籍</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="lj_seT">请输入搜索词</div>
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $(".lj_sbt").on("click",function(){
+                $(".lj_seT").show();
+                setTimeout(function(){
+                    $(".lj_seT").hide();
+                },2000);
+            })
+            
+        })
+    </script>
+</body>
+</html>

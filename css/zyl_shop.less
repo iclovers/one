@@ -1,0 +1,509 @@
+@baseColor:#118BD0;
+
+
+/* 全页背景色 */ 
+body {
+    background-color: #F3F4F5;
+}
+
+/* 页头 */ 
+.lesson_layout {
+    width: 0;  
+    overflow: hidden;
+    .header {
+    position: relative;
+    height: 3.6rem;
+    background-image: url(../images/zyl_title.jpg);
+    background-size: 100% auto;
+    > span, > a {
+        position: absolute;
+        top: 0.1rem;
+        width: 0.512rem;
+        height: 0.512rem;
+        line-height: 0.512rem;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, .3);
+        font-size: 0.32rem;
+        z-index: 999;
+    }
+    > a {
+        left: 0.25rem;
+    }
+    > span {
+        right: 0.25rem;
+        .share {
+            display: none;
+            position: absolute;
+            top: 0.5rem;
+            right: -0.23rem;
+            width: 6.4rem;
+            padding: 0.128rem;
+            text-align: center;
+            font-size: 0.48rem;
+            background-color: hsla(0,0%,100%,.8);
+            > a{
+                display: inline-block;
+                width: 1.1rem;
+            }
+            a:nth-of-type(2) {
+                color: #ff5b5b;
+            }
+            a:nth-of-type(3) {
+                color: #7BC549;
+            }
+            a:nth-of-type(4) {
+                color: #56B6E7;
+            }
+            a:nth-of-type(5) {
+                color: #FDBE3D;
+            }
+        }
+    }
+}
+
+/* 标题 */
+.title {
+    padding: 0.256rem;
+    font-size: 0.32rem;
+    line-height: 0.75rem;
+    background-color: #fff;
+    > h3 {
+        font-weight: 700;
+        font-size: 0.36rem;
+    }
+    > .money {
+        font-size: 0.3rem;
+        color: #ff5b5b;
+    }
+    > .other-infos {
+        font-size: 0.24rem;
+        > i {
+            color: @baseColor;
+        }
+        > span {
+            color: #aaa;
+            padding-left: 0.15rem; 
+        }
+    }
+}
+.link {
+    > a {
+        display: block;
+        height: 0.75rem;
+        line-height: 0.75rem;
+        padding-left: 0.256rem; 
+        padding-right: 0.256rem; 
+        font-size: 0.26rem;
+        color: @baseColor;
+        background-color: #F1F8FF;
+    }
+}
+
+/* tab栏 */
+.tab {
+    margin-top: 0.18rem; 
+    font-size: 0.32rem;
+    background-color: #fff;
+    z-index: 999;
+    .am-nav-tabs {
+        border: none;
+    }
+    .am-nav-tabs>li.am-active>a,a:visited, a:hover, a:focus, a:active {
+        color: #333;
+    }
+    .am-nav-tabs>li>a {
+        border: none;
+    }
+    .am-nav>li>a:focus, .am-nav>li>a:hover {
+        background-color: #fff;
+    }
+    .am-nav-tabs>li {
+        margin-bottom: 0; 
+    }
+    .am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover {
+        color: #333;
+    }
+    .am-active {
+        border-bottom: 3px solid @baseColor;
+    }
+    /* 去除默认padding */
+    .am-u-sm-4 {
+        padding-left: 0; 
+        padding-right: 0;
+        text-align: center;
+    }
+}
+.am-panel {
+    border: none;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+.am-nav>li.am-active>a, .am-nav>li.am-active>a:focus, .am-nav>li.am-active>a:hover {
+    color: #333;
+    background-color: #fff;
+}
+.am-nav>li+li {
+    margin-top: 0;
+}
+/* content部分 */
+.content {
+    padding: 0.256rem; 
+    background-color: #fff;
+    font-size: 0.28rem;
+    > h1 {
+        position: relative;
+        padding: 0.34rem;
+        font-size: 0.34rem;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+        &::before, &::after {
+            position: absolute;
+            top: 50%;
+            transform: rotate(45deg);
+            content: "";
+            width: 0.07rem;
+            height: 0.07rem;
+            background-color: #333;
+        }
+        &::before {
+            left: 2rem;
+        }
+        &::after {
+            right: 2rem;
+        }
+    }
+    > img {
+        display: block;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto;
+    }
+    > .questions {
+        margin-top: 0.2rem;
+        margin-bottom: 1.6rem;
+        line-height: 0.5rem;
+        > h4 {
+            color: red;
+            border-left: 3px solid red;
+            font-weight: 700;
+            padding-left: 0.1rem;
+            margin-left: 0.1rem;
+        }
+        > p {
+            padding-left: 0.32rem; 
+            padding-right: 0.32rem; 
+        }
+        > .que {
+            font-weight: 700;
+        }
+    }
+    > span {
+        display: block;
+        text-align: center;
+    }
+    > p {
+        text-align: center;
+        line-height: 0.4rem;
+        margin-bottom: 1rem; 
+    }
+    > .teacher {
+        display: flex;
+        padding-left: 0.256rem; 
+        padding-right: 0.256rem;
+        font-size: 0.28rem;
+        .teacher-img {
+            width: 1.62rem;
+            height: 1.62rem;
+            padding-top: 0.06rem; 
+            margin-right: 0.5rem; 
+            border-radius: 50%;
+            background-image: url(../images/zyl_teacher.png);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+        .teacher-detail {
+            flex: 1;
+            > h4 {
+                font-size: 16px;
+                padding-bottom: 0.1rem; 
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/* 推荐块 */
+.recommend {
+    > a {
+        display: flex;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        height: 1.532rem;
+        padding: 0.256rem;
+        background-color: #fff;
+        > span {
+            margin-right: 0.2rem;
+            margin-top: 0.2rem;
+            width: 0.58rem;
+            height: 0.58rem;
+            background-image: url(../images/zyl_icon1.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        > .explore {
+            font-size: 0.34rem;
+            strong {
+                font-weight: 700;  
+            }
+            p {
+                font-size: 0.24rem;
+                color: #bbb;
+            }
+        }
+        > .class-cover {
+            flex: 1;
+            width: 1.6rem;
+            height: 1.02rem;
+            margin-left: 1rem; 
+            position: relative;
+            > img {
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            > img:nth-of-type(1) {
+                left: -40px;
+                width: 1.33rem;
+                height: 0.75rem;
+            }
+            > img:nth-of-type(2) {
+                left: -20px;
+                width: 1.64rem;
+                height: 0.9rem;
+            }
+            > img:nth-of-type(3) {
+                left: 5px;
+                width: 1.83rem;
+                height: 1rem;
+            }
+        }     
+    }
+
+
+}
+
+/* 目录 */ 
+.catalogue {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    .listen-logo {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 1.38rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        text-align: center;
+        color: #fff;
+        background-image: linear-gradient(-134deg,#47b2ff,#0b8bff 100%,#0b8bff 0);
+        font-size: 0.24rem;
+    }
+    .audio-list, .audio-active {
+        padding-top: 0.5rem; 
+        border-bottom: 1px solid #eee;
+        > a {
+            position: relative;
+            padding-left: 0.3rem; 
+            padding-right: 0.3rem; 
+            display: block;
+            height: 1.4rem;
+            font-size: 0.24rem;
+            .play-logo {
+                position: absolute;
+                top: 0.2rem;
+                left: 0.3rem;
+                color: @baseColor;
+                > span {
+                    font-size: 0.3rem;
+                }
+            }
+            > p {
+                padding-left: 1rem;
+                font-size: 0.3rem;
+            }
+        }
+    }
+    .audio-list:nth-last-of-type(-n+5) {
+        .play-logo {
+            position: absolute;
+            top: 0.1rem;
+            left: 0.5rem;
+            color: #ccc;
+            > span {
+                font-size: 0.5rem;
+            }
+        }
+    }
+    .chapter-list {
+        .audio-list:nth-last-of-type(-n+4) {
+            display: none;
+        }        
+    }
+
+    .cata-title {
+        font-size: 0.26rem;
+        line-height: 0.75rem;
+        color: #666;
+        background-color: #F3F4F5;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding-left: 0.5rem; 
+    }
+    .chapter-title {
+        position: relative;
+        font-size: 0.34rem;
+        color: @baseColor;
+        margin-top: 0.8rem;
+        padding-left: 0.5rem; 
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.08rem;
+            height: 0.2rem;
+            background-color: @baseColor;
+        }
+    }
+    .unfold {
+        height: 1.058rem;
+        line-height: 1.058rem;
+        text-align: center;
+        font-size: 0.26rem;
+        color: @baseColor;
+        > span:nth-of-type(2) {
+            display: none;
+        }
+    }
+}
+
+/* 留言 */
+.message {
+    font-size: 0.34rem;
+    padding: 0.2rem;
+    background-color: #fff;
+    margin-top: 0.2rem;
+    margin-bottom: 0.82rem;
+    > h3 {
+        font-weight: 700;
+    }
+    > .meg-bg {
+        position: relative;
+        color: #666;
+        font-size: 0.28rem;
+        width: 100%;
+        height: 4.44rem;
+        background-image: url(../images/zyl_phone.png);
+        background-size: 4rem 3rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::before {
+            content: "暂无评价";
+            position: absolute;
+            bottom: 0.1rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+} 
+
+/* 底部固定 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 0.82rem;
+    border-top: 2px solid #F3F4F5;
+    font-size: 0.32rem;
+    line-height: 0.82rem;
+    text-align: center;
+    background-color: #fff;
+    .left {
+        flex: 1;
+        color: #333;
+    }
+    .right {
+        flex: 1;
+        color: #fff;
+        background-color: @baseColor;
+    }
+} 
+/* 回到顶部 */
+.top {
+    display: none;
+    width: 0.58rem;
+    height: 0.58rem;
+    background-color: rgba(11, 139, 255, .5);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 0.2rem;
+    text-align: center;
+    font-size: 0.36rem;
+    color: #fff;
+}
+.am-btn-success {
+    border: none;
+}
+.am-btn {
+    padding: 0;
+    line-height: 0.5rem;
+}
+.am-btn-success:focus, .am-btn-success:hover {
+    background-color: rgba(11, 139, 255, .5);
+}
+
+}
+/* 跳转登录界面 */
+.login {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4rem;
+    height: 1rem;
+    border-radius: 0.2rem;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+    z-index: 9999;
+}
+.load_animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;  
+    top: 0;
+    left: 0; 
+    background-color: #fff;
+    z-index: 9999; 
+    .load_icon {
+        position: absolute;
+        width: 77/50rem;
+        height: 50/50rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: url('./../images/zyp-load-pic.png') no-repeat left 1/50rem;
+        background-size: 77/50rem 1284/50rem;
+    }
+}

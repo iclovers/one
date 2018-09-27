@@ -1,0 +1,106 @@
+.play-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.play-box .audio-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-image: url(../images/zyl_button_play.png);
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+.play-box .audio-pause-button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.play-box .audio-pause-button .shade {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.play-box .audio-pause-button .ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../images/zyl_title.jpg);
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: -3px 3px 12px 2px rgba(0, 0, 0, 0.5);
+  animation: move 4s linear infinite;
+}
+@keyframes move {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.content > h4 {
+  font-size: 0.36rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  line-height: 0.8rem;
+}
+.content > h4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.5rem;
+  height: 2px;
+  background-color: #ccc;
+}
+.content > .subtitle {
+  font-family: '宋体', SimSun;
+  padding-top: 0.3rem;
+  font-size: 0.24rem;
+  font-weight: 700;
+  color: #555;
+}
+.content > .details > p {
+  font-family: '宋体', SimSun;
+  font-size: 0.24rem;
+}
+.content > .details > p:nth-last-of-type(-n+2) {
+  display: none;
+}
+.content > .unfold-content {
+  height: 1.058rem;
+  line-height: 1.058rem;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #118BD0;
+}
+.content > .unfold-content > span:nth-of-type(2) {
+  display: none;
+}

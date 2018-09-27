@@ -1,0 +1,189 @@
+@baseColor: #0b8bff;
+.lesson_layout {
+    width: 0;  
+    overflow: hidden;
+    font-size: 0.26rem;
+    background-color: #eee;
+        .am-gotop {
+        border-radius: 50%;
+        i {
+            background-color: rgba(11, 139, 255, .6)
+        } 
+    }
+   .am-header {
+       height: 40/50rem;
+       line-height: 40/50rem;
+        .am-header-icon {
+            font-size: 25/50rem;
+        }
+        .am-header-title {
+            font-size: 16/50rem;
+        }
+        .login_link {
+            img {
+                height: 26/50rem;
+                position: absolute;
+                z-index: 10;
+                border-radius: 50%;
+                top: 7/50rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .active {
+                display: none;
+            }
+        }
+        
+    } 
+    .tab_box {
+        padding-top: 0.8rem;
+        position: relative;
+        .tab_nav {
+            position: relative;
+            >ul {
+                box-shadow: 0 5/50rem 5/50rem #ccc;
+                position: absolute;
+                height: 40/50ren;
+                width: 11.2rem;
+                top: -0.8rem;
+                left: 0;
+                background-color: #fff;
+                >li {
+                   float: left;
+                   width: 1.6rem;
+                   height: 40/50ren;
+                   line-height: 40/50rem;
+                   text-align: center;
+                    a {
+                        position: relative;
+                        display: block;
+                        height: 40/50ren;
+                        line-height: 40/50rem;
+                        color: #333;
+                    }
+                    &.active {
+                        a {
+                            color: @baseColor;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 1.3rem;
+                                height: 4/50rem;
+                                background-color: @baseColor;
+                                border-radius: 2/50rem;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                   }
+               }
+           }
+        }
+        .tab_bd {
+            a {
+                &:visited, &:focus {
+                    color: #333;
+                }
+            }
+            >ul {
+                >li {
+                    display: none;
+                    .class_lesson_box {
+                        li {
+                            background-color: #fff;
+                            margin-top: 5/50rem;
+                            height: 118/50rem;
+                            width: 320/50rem;
+                            padding: 10/50rem;
+                            box-shadow: 0 2/50rem 2/50rem #ccc;
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                .lesson_c_left {
+                                    position: relative;
+                                    width: 150/50rem;
+                                    height: 95/50rem;
+                                    h2 {
+                                        width: 150/50rem;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        font-size: 18/50rem;
+                                        font-weight: 700;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                    }
+                                    .price_old {
+                                        position: absolute;
+                                        font-size: 10/50rem;
+                                        left: 0;
+                                        bottom: 18/50rem;
+                                        color: #bbb;
+                                    }
+                                    .lesson_price {
+                                        position: absolute;
+                                        color: #f00;
+                                        font-size: 10/50rem;
+                                        bottom: 0;
+                                        left: 0;
+                                    }
+                                    .peopleIn {
+                                        position: absolute;
+                                        font-size: 10/50rem;
+                                        color: #333;
+                                        bottom: 0;
+                                        right: 0;
+                                    }
+
+                                }
+                                .right_pic {
+                                    padding-top: 10/50rem;
+                                    img {
+                                         width: 140/50rem;
+                                    }
+                                }    
+                            }
+                        }
+                        .display_all {
+                            background-color: #eee;
+                            height: 1rem;
+                            margin-top: 0;
+                            padding: 0;
+                            text-align: center;
+                            line-height: 1rem;
+                            color: #999;
+                        }
+                    }
+                }
+                >li.active {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.load_animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;  
+    top: 0;
+    left: 0; 
+    background-color: #fff;
+    z-index: 9999; 
+    .load_icon {
+        position: absolute;
+        width: 77/50rem;
+        height: 50/50rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: url('./../images/zyp-load-pic.png') no-repeat left 1/50rem;
+        background-size: 77/50rem 1284/50rem;
+    }
+}

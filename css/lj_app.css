@@ -1,0 +1,155 @@
+body {
+  font-size: 0.24rem !important;
+  max-width: 6.4rem;
+}
+p,
+h1,
+h4 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+h6,
+h2,
+p {
+  margin-top: 0 !important;
+}
+.wrap .header {
+  position: relative;
+  height: 4.74rem;
+  margin-bottom: 0.16rem;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.wrap .header > .lj_hImg {
+  height: 4.74rem;
+}
+.wrap .header > .lj_applogo {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  background: url(../images/lj_loadlogo.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1.8rem;
+  height: 0.5rem;
+}
+.wrap .header > .lj_appIco {
+  position: absolute;
+  top: 0.3rem;
+  left: 50%;
+  transform: translate(-50%);
+  background: url(../images/lj_app.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.wrap .header > .lj_appTitle {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 0.36rem;
+  text-align: center;
+  color: #3a3a3a;
+  overflow: hidden;
+}
+.wrap .header > .lj_appTitle > .lj_small {
+  line-height: 12px;
+  padding: 1px 2px 0;
+  border: 1px solid rgba(253, 195, 195, 0.8);
+  font-size: 10px;
+  font-style: normal;
+  color: #da7272;
+  background-color: rgba(241, 105, 105, 0.1);
+}
+.wrap .header > .lj_score {
+  position: absolute;
+  top: 2.6rem;
+  left: 50%;
+  transform: translate(-50%);
+  line-height: 0.28rem;
+  font-size: 0.24rem;
+  text-align: center;
+  color: #939393;
+}
+.wrap .header > .lj_score > span {
+  margin-left: 0.2rem;
+}
+.wrap .header > .lj_dian {
+  position: absolute;
+  top: 3.4rem;
+  left: 50%;
+  transform: translate(-50%);
+  height: 33px;
+  line-height: 33px;
+  background-color: #01a2f0;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  border-radius: 0;
+  width: 5.8rem;
+  text-align: center;
+  color: #fff;
+}
+.wrap .header > .lj_dian > a {
+  color: #fff !important;
+}
+.wrap .content {
+  padding: 0.2rem;
+}
+.wrap .content > .lj_banner {
+  width: 5.44rem;
+  height: 5.44rem;
+}
+.wrap .content > .lj_detail {
+  margin-top: 0.2rem;
+}
+.wrap .content > .lj_detail p {
+  height: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrap .content > .lj_detail > .lj_ico {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  bottom: 0;
+  right: 0;
+}
+.wrap .content > .lj_ban {
+  color: #939393;
+  font-size: 0.24rem;
+  line-height: 1.5;
+  padding-top: 0.2rem;
+}
+.wrap .content > .lj_ban > .lj_tips {
+  margin: 0.2rem 0 0.04rem;
+}
+.wrap .content > .lj_ban > .lj_tips > span {
+  width: 0.32rem;
+  height: 0.28rem;
+  margin-right: 0.4rem;
+}
+.wrap .content > .lj_ban > .lj_tips > span > i {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.wrap .content > .lj_ban > .lj_tips > span i::before {
+  position: absolute;
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  padding-right: 0.16rem;
+  background-size: cover;
+  background-position: center;
+}
+.wrap .content > .lj_ban > .lj_tips > span .lj_i1::before {
+  left: 0.3rem;
+  background-image: url(../images/lj_tips1.png);
+}
+.wrap .content > .lj_ban > .lj_tips > span .lj_i2::before {
+  left: 1.9rem;
+  background-image: url(../images/lj_tips2.png);
+}
+.wrap .content > .lj_ban > .lj_tips > span .lj_i3::before {
+  left: 3.6rem;
+  background-image: url(../images/lj_tips3.png);
+}

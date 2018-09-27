@@ -1,0 +1,586 @@
+@basecolor:#0b8bff;
+.c_layout {
+    font-size: 13/50rem;
+    background-color: #FBFCFC;
+    /*头部样式*/
+    .c_header {
+        width: 100%;
+        height: 45/50rem;
+        line-height: 45/50rem;
+        border: 1/50rem solid #EAEAEA;
+        padding: 0 15/50rem;
+        .title {
+            display: inline-block;
+            margin-right: 10/50rem;
+             h2{
+                color: @basecolor;
+                font-weight: bold;
+                font-size: 19/50rem;
+            }
+        }
+        
+        .sub_title {
+            color: #ccc;
+        }
+        .order {
+            color: #333;
+            font-weight: bold;
+        }
+    }
+    /*轮播图样式*/ 
+    .c_banner {
+        width: 100%;
+        padding-bottom: 20/50rem;
+        a {
+            width: 100%;
+            display: block;
+            >img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .c_indicator{
+            bottom: -3/32rem !important;
+            .swiper-pagination-bullet{
+                width: 5/50rem;
+                height: 5/50rem;
+                border-radius: 50%;
+                margin: 0 3/50rem !important;
+                background-color: @basecolor !important;
+            }
+        }
+    }
+    /*导航栏样式*/
+    .c_nav {
+        width: 100%;
+        overflow: hidden;
+        height: 100/50rem;
+        position: relative;
+        /*导航栏*/
+        >.c_nav_ul{
+            width: 200%;
+            position: absolute;
+            left: 0;
+            transition:left .5s linear;
+            >li{
+                float: left;
+                width: 10%;
+                padding:5/50rem;
+                a,a:hover,a:focus,a:active{
+                    color: #333;
+                }
+                a{
+                    display: block;
+                    >.c_nav_icon{
+                        display: block;
+                        width: 35/50rem;
+                        height: 35/50rem;
+                        padding:5/50rem;
+                        box-sizing: content-box;
+                        background-clip: content-box;
+                        background-origin: content-box;
+                        background: url(../images/nml-icon-sprite.png) no-repeat;
+                        background-size: 400/50rem 195/50rem;
+                    }
+                    >p {
+                        font-size: 12/50rem;
+                    }
+                    >.c_nav_icon_marry {
+                        background-position: -133/50rem -135/50rem;
+                    }
+                    >.c_nav_icon_grown {
+                        background-position: -258/50rem -94/50rem;
+                    }
+                    >.c_nav_icon_love {
+                        background-position: -92/50rem -92/50rem;
+                    }
+                    >.c_nav_icon_mood {
+                        background-position: -133/50rem -90/50rem;
+                    }
+                    >.c_nav_icon_psycology {
+                        background-position: -173/50rem -90/50rem;
+                    }
+                    >.c_nav_icon_relationship {
+                        background-position: -215/50rem -90/50rem;
+                    }
+                    >.c_nav_icon_job {
+                        background-position: -175/50rem -134/50rem;
+                    }
+                    >.c_nav_parent {
+                        background-position: -298/50rem -90/50rem;
+                    }
+                    >.c_nav_icon_sex {
+                        background-position: -341/50rem -90/50rem;
+                    }
+                    >.c_nav_icon_speak {
+                        background-position: -89/50rem -133/50rem;
+                    }
+                }
+            }
+        }
+    }
+    /*导航原点*/
+    .c_nav_dots {
+        width: 100%;
+        position: relative;
+        top: -20/50rem;
+        border-bottom: 1/50rem solid transparent;
+        >ul{
+            width: 100%;
+            >li {
+                width: 5/50rem;
+                height: 5/50rem;
+                background-color: #ccc;
+                margin-left: 10/50rem;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+            }
+            >li:first-of-type {
+                left: 42%;
+            }
+            >li:last-of-type {
+                left: 47%;
+            }
+            .active {
+                background-color: @basecolor;
+                width: 8/50rem;
+                border-radius: 2/50rem;
+            }
+        }
+    }
+    /*测试块*/
+    .c_test {
+        width: 100%;
+        border-top: 1/50rem solid #F3F4F5;
+        border-bottom: 1/50rem solid #F3F4F5;
+        overflow: hidden;
+        >a {
+            float: left;
+            display: block;
+            width: 50%;
+            >img {
+                width: 100%;
+            }>img:first-of-type {
+                border-right: 1/50rem solid #F3F4F5;
+            }
+        }
+    }
+    /*标题公共样式*/ 
+    .c_title {
+        height: 30/50rem;
+        line-height: 30/50rem;
+        margin: 20/50rem 0;
+        >h3 {
+            font-size: 20/50rem;
+            font-weight: bold;
+        }
+        >div {
+            font-size: 12/50rem;
+            color: #999;
+        }
+    }
+    /*热门块*/ 
+    .c_hot {
+        width: 100%;
+        padding: 0 13/50rem;
+        >.c_hot-Content {
+            width: 100%;
+            font-size: 12/50rem;
+            .c_hot_detail {
+                width: 100%;
+                overflow: hidden;
+                margin-bottom: 30/50rem;
+                a{
+                    display: inline-block;
+                    width: 25%;
+                    padding-right: 8/50rem;
+                    >img {
+                        width: 100%;
+                        border-radius: 8/50rem;
+                    }
+                }
+                .right {
+                    width: 75%;
+                    /*按钮文章*/
+                    .c_hot_btn {
+                        box-sizing: border-box;
+                        background-color: transparent;
+                        border: none;
+                        font-size: 15/50rem;
+                        color: #333;
+                        padding: 0;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 220/50rem;
+                    }
+                    >.title {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 15/50rem;
+                        color: #333;
+                    }
+                    >.introduce {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: #c1c1c1;
+                        padding: 7/50rem 0;
+                    }
+                    >.price,
+                    >.visitor {
+                        display: inline-block;
+                        color: #c1c1c1
+                    }
+                    >.price{
+                        color: #ff5b5b;
+                        padding-right: 10/50rem;
+                    }
+                }
+            }
+        }
+    }
+    /*热门块遮盖层样式*/
+    .article-mask {
+        background-color: #fff;
+        h3 {
+            font-weight: bold;
+            font-size: 15/50rem;
+            color: #666;
+        }
+        h4 {
+            font-weight: bold;
+            font-size: 14/50rem;
+            color: #333;
+            margin: 10/50rem 0;
+        }
+        p {
+            text-indent: 2em;
+            font-size: 12/50rem;
+        }
+    }
+    #more_info {
+        text-indent: 0;
+        text-align: center;
+        margin-top: 10/50rem;
+        font-size: 13/50rem;
+        background-color: @basecolor;
+        color: #fff;
+    }
+    /*感谢块样式*/ 
+    .c_mail {
+        width: 100%;
+        padding: 0 13/50rem;
+        >a {
+            width: 100%;
+            >img {
+                width: 100%;
+                border-radius: 4/50rem;
+            }
+        }
+    }
+    /*推荐块样式*/
+    .c_recommend {
+        width: 100%;
+        padding: 0 13/50rem;
+        >.c_R_content {
+            .c_hot_detail {
+                width: 100%;
+                overflow: hidden;
+                margin-bottom: 23/50rem;
+                >a{
+                    display: inline-block;
+                    width: 25%;
+                    padding-right: 8/50rem;
+                    >img {
+                        width: 100%;
+                        border-radius: 8/50rem;
+                    }
+                }
+                >.right {
+                    width: 75%;
+                    .name {
+                        font-size: 17/50rem;
+                        font-weight: bold;
+                        >i {
+                            display: inline-block;
+                            width: 1/50rem;
+                            height: 15/50rem;
+                            background-color:#999;
+                            margin: 0 8/50rem;
+                            font-style: normal;
+                        }
+                        >span:first-of-type {
+                            font-size: 17/50rem;
+                            font-weight: bold;
+                        }
+                        >span:last-of-type {
+                            color: #333;
+                        }
+                    }
+                    .introduce {
+                        font-size: 12/50rem;
+                        color: #666666;
+                        padding-top: 10/50rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .specialist {
+                        font-size: 12/50rem;
+                        color: #999;
+                        padding: 10/50rem 0;
+                    }
+                    .price {
+                        font-size: 14/50rem;
+                        color: #ff5b5b;
+                    }
+                }
+            }
+        }
+        .c_change {
+            >a {
+                display: block;
+                height: 22/50rem;
+                width: 70/50rem;
+                border: 1/50rem solid #eee;
+                border-radius: 10/50rem;
+                font-size: 12/50rem;
+                margin: 0 auto;
+                text-align: center;
+                line-height:18/50rem;
+            }
+        }
+    }
+    /*动态版块样式*/
+    .c_messages {
+        width: 100%;
+        padding: 0 13/50rem;
+        height: 50/50rem;
+        margin-top: 10px;
+        background: url(../images/nml-bling.png) no-repeat center center;
+        background-size: cover;
+        >.c_image {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .c_attitude {
+                transform: translateY(-50%);
+                position: absolute;
+                top: 50%;
+                left: 10/50rem;
+                width: 60/50rem;
+                >.am-icon-commenting-o {
+                    color: @basecolor;
+                }
+                >span {
+                    font-weight: bold;
+                }
+            }
+            .c_messages_update {
+                width: 294/50rem;
+                height: 50/50rem;
+                overflow: hidden;
+                position: relative;
+                .box-wrapper{
+                    top: 0;
+                    width: 294/50rem;
+                    position: absolute;
+                    .c_reserve {
+                        width: 230/50rem;
+                        height: 45/50rem;
+                        line-height: 45/50rem;
+                        margin-left: 60/50rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    a {
+                        display: inline-block;
+                        color: @basecolor;
+                    }
+                }
+                }
+            }
+
+        }
+    }
+    /*最佳人气样式*/
+    .c_bester {
+        width: 100%;
+        padding: 0 13/50rem;
+        .c_bester_content {
+            width: 100%;
+            height: 196/50rem;
+            overflow: hidden;
+            position: relative;
+            .c_bester_box  {
+                transition: all 0.5s;
+                position: absolute;
+                left: 0;
+                width: 2.8*5rem;
+                height: 196/50rem;
+                .c_bester_lists {
+                    float: left;
+                    background-color: #fff;
+                    color: #999;
+                    width: 130/50rem; 
+                    font-size: 12/50rem;
+                    margin-right: 10/50rem;
+                    .top {
+                        width: 130/50rem;
+                        text-align: center;
+                        padding: 5/50rem;
+                        a {
+                            display: inline-block;
+                            width: 50/50rem;
+                            height: 50/50rem;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;
+                            border-radius: 50%;
+                        }
+                        h3 {
+                            color: #333;
+                            font-size: 15/50rem;
+                            font-weight: normal;
+                        }
+                    }
+                    .bottom {
+                        width: 130/50rem;
+                        margin-top: 10/50rem;
+                        border-top: 1/50rem solid #f8f8f8;
+                        padding: 10/50rem;
+                    }
+                }
+            }
+        }
+    }
+    /*最新入住*/
+    .c_title{
+        .c_title_button{
+            padding: 5/50rem;
+            font-size: 13/50rem;
+            background-color: transparent;
+            color: #999;
+            border: 1/50rem solid transparent;
+        }
+    }
+   .c_newers_content {
+        width: 294/50rem;
+        overflow: hidden;
+        .c_newrs_lists {
+            width: 100%;
+            overflow: hidden;
+            .c_newers{
+                width: 100%;
+                background-color: #fff;
+                color: #999;
+                margin-bottom: 5/50rem;
+                .top {
+                    border-bottom: 1/50rem solid #f8f8f8;
+                    a {
+                        float: left;
+                        display: inline-block;
+                        width: 50/50rem;  
+                        height:50/50rem;  
+                        margin-right: 5/50rem;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    h3 {
+                        display: inline;
+                        color: #333;
+                        font-size: 15/50rem;
+                        font-weight: bold;
+                    }
+                    p {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis; 
+                    }
+                    .c_reserve {
+                        margin-left: 10/50rem;
+                        padding:0 5/50rem;
+                        background-color: @basecolor;
+                        font-size: 10/50rem;
+                        border-radius: 10/50rem;
+                        font-weight: normal;
+                    }
+                }
+                .bottom {
+                    float: left;
+                    padding: 10/50rem 0;
+                }
+                
+            }
+        }
+   }
+   /*预约端样式*/
+   .reserve_part {
+       background-color: #fff;
+    .reserve_progress {
+        background-color: #fff;
+         p {
+             font-size: 10/50rem;
+             text-align: left;
+             margin: 5/50rem 0;
+         }
+         .reserve_title {
+             margin: 10/50rem;
+             h4 {
+                 font-size: 13/50rem;
+                 font-weight: bolder;
+                 color: #333;  
+             }  
+         }
+         .reserve_content {
+             text-align: left;
+             h4 {
+                 font-size: 13/50rem;
+                 font-weight: bold;
+                 color: #333;
+             }
+         }
+    }
+    .reserve_agree{
+        background-color: @basecolor;
+        color: #fff;
+        width: 40/50rem;
+        margin: auto;
+        .reserve_agree_btn {
+            font-size: 14/50rem;
+            padding: 2/50rem 0;
+        }
+    }
+   }
+   /*小助手精选样式*/
+   .c_assitant {
+        background-color: #fff;
+        width: 100%;
+        padding: 0 13/50rem;
+        .content {
+        a {
+            display: block; 
+            width: 100%;
+            margin-bottom: 10/50rem;
+            img {
+                width: 100%;
+                border-radius: 10/50rem;
+            }
+        }
+    }
+   }
+   /*底部背景样式*/
+   .footer {
+        background-color: #fff;
+        padding: 0 13/50rem;
+        width: 100%;
+        img {
+            width: 50%;
+            margin: 0 auto;
+        }
+   }  
+};
